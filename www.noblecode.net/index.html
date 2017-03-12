@@ -1,0 +1,539 @@
+<html class="ui-mobile">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>减肥达人导师1对1指导减肥</title>
+    <link rel="stylesheet" href="images/base_2015.css">
+    <link rel="stylesheet" href="images/details.css">
+    <link rel="stylesheet" href="images/swiper.css">
+    <link rel="stylesheet" href="images/css.css">
+    <script type="text/javascript" src="images/jquery.js"></script>
+    <script type="text/javascript" src="images/base.js"></script>
+    <script type="text/javascript" src="images/jquery_002_002.js"></script>
+    <script type="text/javascript" src="images/swiper.js"></script>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telphone=no">
+    <meta name="renderer" content="webkit">
+
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+<!--<script type="text/javascript" src="images/cityjson"></script>
+
+
+
+<script>
+     
+var city = returnCitySN["cname"];
+    
+if (city.indexOf("北京") >= 0 || city.indexOf("上海") >= 0  || city.indexOf("厦门") >= 0 || city.indexOf("深圳") >= 0) {
+        
+	location.href = "/001.htm";
+ //跳转的网址; 
+}
+
+</script>
+-->
+    <script src="images/jquery-1.js"></script>
+    <script src="images/jquery_002.js" type="text/javascript"></script>
+
+    <script>
+        arr_wx = ['bxgcdj217','chgcdr197','djgcdj198','GCDHCL008','dwgcdm211','hagcdf210','jlgcdq504','jygcdg204','lxgcdr208','njgcdz206','nqgcdt215','cxgcda188','hzgcdq172','qdgcdh191','xygcda173','yagcdz187','cdgcd045','elgcdk155','gcdmm2008','hpgcdl142','ljgcdh148','pxgcdb149','sxgcdhL154','tzgcdg147','zsgcda134','zpgcda151','zjgcdh156','yzgcdz150','pjgcde205','qagcdk214','sdgcdd199','tfgcdh212','uhgcdi801','fygcdi907','wcgcdg203','wtgcdc201','yhgcdx207','zmgcdx209','zogcdb213','vgcdv1001','gcdcc1008','gcdhcl008','ppgcd0509','rrgcd0601','gcdcd003','sbgcd0610','ijgcd420','ijgcd420','kgcdk0801','ddgcd0424','gcdbc3002','lmgcdw506','zcgcdv904','gcdhx1014','dxgcdk105','gcdlml124','LGGCDW808','gcdljm123','gcdzb125','gcdtby012','gcdzqq126','hcgcdw908','fygcdi907','yxgcdb909','gcdgay002','gcdzrtm004','zagcds709','xfgcdc102','gdgcdw100','gcdxyp006']; 
+        var wx_index = Math.floor((Math.random() * arr_wx.length));
+        var stxlwx = arr_wx[wx_index];
+        stxlwx = arr_wx[wx_index];
+    </script>
+
+    <script>
+        $(function () {
+            // 答案数据
+            var json = [
+                "18岁以下10斤以下试过减肥，但体重反弹",
+                "18岁以下10斤以下一直想减肥，但没有行动",
+                "18岁以下10斤以下成功了，还想再瘦",
+                "18岁以下10-20斤试过减肥，但体重反弹",
+                "18岁以下10-20斤一直想减肥，但没有行动",
+                "18岁以下10-20斤成功了，还想再瘦",
+                "18岁以下20斤以上试过减肥，但体重反弹",
+                "18岁以下20斤以上一直想减肥，但没有行动",
+                "18岁以下20斤以上成功了，还想再瘦",
+                "18岁-25岁10斤以下试过减肥，但体重反弹",
+                "18岁-25岁10斤以下一直想减肥，但没有行动",
+                "18岁-25岁10斤以下成功了，还想再瘦",
+                "18岁-25岁10-20斤试过减肥，但体重反弹",
+                "18岁-25岁10-20斤一直想减肥，但没有行动",
+                "18岁-25岁10-20斤成功了，还想再瘦",
+                "18岁-25岁20斤以上试过减肥，但体重反弹",
+                "18岁-25岁20斤以上一直想减肥，但没有行动",
+                "18岁-25岁20斤以上成功了，还想再瘦",
+                "25岁以上10斤以下试过减肥，但体重反弹",
+                "25岁以上10斤以下一直想减肥，但没有行动",
+                "25岁以上10斤以下成功了，还想再瘦",
+                "25岁以上10-20斤试过减肥，但体重反弹",
+                "25岁以上10-20斤一直想减肥，但没有行动",
+                "25岁以上10-20斤成功了，还想再瘦",
+                "25岁以上20斤以上试过减肥，但体重反弹",
+                "25岁以上20斤以上一直想减肥，但没有行动",
+                "25岁以上20斤以上成功了，还想再瘦"
+            ];
+            // 第一题
+            var question_1 = '', question_2 = '', question_3 = '', Last_question = '';
+            $("#first li").on("click", function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                question_1 = $(this).html();
+                mySwiper.slideNext();
+            });
+
+            // 第二题
+            $("#second li").on("click", function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                question_2 = $(this).html();
+                mySwiper.slideNext();
+            });
+
+            // 第三题
+            $("#third li").on("click", function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                question_3 = $(this).html();
+                question_3 = question_3.replace(/[A-Z]+\./g, "");
+
+            });
+
+            // 点击提交弹出对应编号
+            $("#submit_btn").on("click", function () {
+                if (question_3 == "") {
+                    alert("请告诉我们您以前试过减肥吗！");
+                    return;
+                }
+                Last_question = question_1 + question_2 + question_3;
+                Last_question = $.trim(Last_question);
+                Last_questionIndex = $.inArray(Last_question, json) + 1;
+                $("#Mask .Mask_txt h3 span,#Mask .Mask_txt .num").html(Last_questionIndex);
+                $("#Mask").fadeIn(400);
+            });
+
+            // 点击关闭按钮关闭遮罩层并且将测试返回第一题
+            $("#Mask .close_Mask").on("click", function () {
+                $("#Mask").fadeOut(400);
+                mySwiper.slideTo(0);
+            });
+
+            // 点击上一题
+            $(".prev").on("click", function () {
+                mySwiper.slidePrev();
+            });
+
+
+            // 导航切换
+            $(".menu li").on("click", function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                var TabIndex = $(this).index();
+                if (TabIndex == 0) {
+                    $("#case").fadeIn(400);
+                    $("#comment").fadeOut(400);
+                } else {
+                    $("#comment").fadeIn(400);
+                    $("#case").fadeOut(400);
+                }
+            });
+
+            var isPlay = false;
+
+            // 点击播放语音
+            $(".voice").click(function () {
+                if (!isPlay) {
+                    AudioPlay($(this), ".voice_pic");
+                    isPlay = true;
+                } else {
+                    AudioPause($(this), ".voice_pic");
+                    isPlay = false;
+                }
+            });
+
+            $(".M_voice").on("click", function () {
+                if (!isPlay) {
+                    AudioPlay($(this), ".Middle_voice");
+                    isPlay = true;
+                } else {
+                    AudioPause($(this), ".Middle_voice");
+                    isPlay = false;
+                }
+            });
+
+            $(".audio_bottom").on("click", function () {
+                if (!isPlay) {
+                    AudioPlay($(this), ".bottom_voice");
+                    isPlay = true;
+                } else {
+                    AudioPause($(this), ".bottom_voice");
+                    isPlay = false;
+                }
+            });
+
+            // 音频播放函数
+            function AudioPlay(obj, obj_voice) {
+                obj.children("audio").get(0).play();
+                obj.children("em,i").fadeOut();
+                obj.children(obj_voice).addClass("on");
+            }
+            // 音频暂停且当前时间设为0函数
+            function AudioPause(obj, obj_voice) {
+                obj.children("audio").get(0).pause();
+                obj.children("audio").get(0).currentTime = 0;
+                obj.children(obj_voice).removeClass("on");
+            }
+
+            // 点赞
+            var isLike = false;
+            $(".top_b_like").on("click", function () {
+                if (!isLike) {
+                    $(this).children("img").attr("src", "images/top_b_like_on.png");
+                    var LikeNum = parseInt($(this).children("span").html());
+                    $(this).children("span").html(LikeNum + 1);
+                    isLike = true;
+                } else {
+                    $(this).children("img").attr("src", "images/top_b_like.png");
+                    var LikeNum = parseInt($(this).children("span").html());
+                    $(this).children("span").html(LikeNum - 1);
+                    isLike = false;
+                }
+            });
+
+
+            // 点击评论区小图放大到整屏显示
+            $("#thumb .thumb_close").click(function () {
+                $("#thumb").fadeOut(400);
+                $("#thumb .swiper-container .swiper-wrapper").html('');
+            });
+
+            $(".qq_Mask .close_Mask").click(function () {
+                $(".qq_Mask").fadeOut(400);
+            });
+
+            $(".top_r,.bottom_btn,.Link,.top_l").click(function () {
+                $(".qq_Mask").fadeIn(400);
+            });
+        });
+    </script>
+  <script src="images/mynew2.js" type="text/javascript"></script></head>
+<body class="ui-mobile-viewport ui-overlay-a">
+    <div id="web" data-role="page" data-url="web" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="min-height: 611px;">
+        <div class="main pr">
+            <img src="images/img_01.jpg">
+            <div class="top_box clf">
+                <div class="top_l">
+                    <a href="javascript:void(0);" class="ui-link"><img src="images/star_head.png" class="star_head"></a>
+                </div>
+                <div class="top_c">
+                    <p class="clf"><span class="fl">导师1对1指导减肥</span><img src="images/sex.png" class="fl sex"></p>
+                    <p class="clf"><span class="fl">减肥达人</span><img src="images/vip.png" class="fl vip"></p>
+
+                </div>
+                <div class="top_r">
+                    <div class="top_r_box clf">
+                        <a href="javascript:void(0);" class="ui-link">
+                            <div class="add_top">+</div>
+                            <span>加微信<br>学瘦身</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="top_b clf">
+                    <div class="top_b_people"><img src="images/top_b_people.png" class="fl"><span class="fl">75305</span></div>
+                    <div class="top_b_like"><img src="images/top_b_like.png" class="fl"><span class="fl">94031</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="thame_pic top" id="lazy_img">
+                <div class="menu clf">
+                    <ul>
+                        <li class="on">定制减肥方案</li>
+                        <li>粉丝留言</li>
+                    </ul>
+                </div>
+                <div class="change clf">
+                    <div id="case">
+                        <div id="swiper_container">
+                            <div class="swiper-container swiper-container-horizontal">
+                                <div class="swiper-wrapper notmove">
+                                    <div class="swiper-slide swiper-slide-active" style="width: 1295px;">
+                                        <img src="images/test.png">
+                                        <div class="first" id="first">
+                                            <div class="tips">剩二题</div>
+                                            <h3 style="color:#88c20b;margin-top:0;font-size: 1.1rem;font-weight: normal;">测一测你适合哪种减肥方案</h3>
+                                            <h3>1.你的年龄是？</h3>
+                                            <ul class="clf">
+                                                <li>18岁以下</li>
+                                                <li>18岁-25岁</li>
+                                                <li>25岁以上</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-next" style="width: 1295px;">
+                                        <img src="images/test.png">
+                                        <div class="first">
+                                            <div class="tips clf"><span class="fl prev">上一题</span>剩一题</div>
+                                            <h3 style="margin-top:0;">2.你想瘦多少斤？</h3>
+                                            <ul class="clf" id="second">
+                                                <li>10斤以下</li>
+                                                <li>10-20斤</li>
+                                                <li>20斤以上</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 1295px;">
+                                        <img src="images/test.png">
+                                        <div class="first" id="third">
+                                            <div class="tips clf"><span class="fl prev">上一题</span></div>
+                                            <h3 style="margin-top:0;">3.你以前试过减肥吗？</h3>
+                                            <ul class="clf">
+                                                <li>A.试过减肥，但体重反弹</li>
+                                                <li>B.一直想减肥，但没有行动</li>
+                                                <li>C.成功了，还想再瘦</li>
+                                            </ul>
+                                            <p><a id="submit_btn" class="ui-link">提交</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case_main">
+                            <div class="wechat_txt">
+                                <p>长按下方按钮复制并添加微信号</p>
+                                <span class="wechat_txtnum">
+                                <script>document.write(stxlwx);</script>LGGCDW808</span>
+                                <p class="col_green">导师1对1指导减肥，轻松享瘦你也可以！</p>
+                            </div>
+                        </div>
+                        <div class="InfoTitle">
+                            <h3>减肥不能盲目</h3>
+                            <h3 class="col_yellow">用对方法，想减多少就减多少</h3>
+                        </div>
+                        <div class="case_main textIndent2">
+                            <p>我叫张倩倩，是一个典型的吃货。从小就很胖，高中时，我就想减肥，可自己一个人摸索着尝试，又有效又能坚持的方法很少，体重偶尔会轻，但人并没有瘦，减减停停这几年走过不少辛酸路。</p>
+                        </div>
+                        <div class="box_80">
+                            <img class="lazy" src="images/img_03.jpg">
+                        </div>
+                        <div class="case_main textIndent2">
+                            <p>后来经朋友介绍，加了导师的微信，看到那么多成功的瘦身例子，我也看到了希望，通过几次了解，她很快给出了适合我的减肥方案！这个方案可以根据不同人的体质进行调配。</p>
+                        </div>
+                        <div class="box_80">
+                            <img class="lazy" src="images/img_04.jpg">
+                        </div>
+                        <div class="case_main textIndent2">
+                            <p>用了这个减肥方案后，我一个月瘦了26斤，如今体重维持在96斤，没任何反弹！为了拯救更多绝望的胖子，为了感谢导师，我下定决心尽我所能，免费宣传它。想和我一样瘦身成功的，可以加导师微信，里面有很多粉丝瘦身成功的心得，可以学习下，还可以免费得到导师的瘦身指导！</p>
+                        </div>
+                        <div class="case_main mt1">
+                            <div class="wechat_txt">
+                                <div class="wechat_txt">
+                                <p>长按下方按钮复制并添加微信号</p>
+                                <span class="wechat_txtnum">
+                                <script>document.write(stxlwx);</script>LGGCDW808</span>
+                                <p class="col_green">导师1对1指导减肥，轻松享瘦你也可以！</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="InfoTitle">
+                            <h3 class="col_yellow fwb">减肥堪称整容术</h3>
+                            <h3 class="fz09">下面给大家分享在导师帮助下减肥成功人生开挂的案例！</h3>
+                        </div>
+                        <div class="case_main">
+                            <div class="fit_people">
+                                <img class="lazy" src="images/img_05.jpg">
+                                <div class="fitTitle"><img src="images/arr_up.png">来自江西张娜</div>
+                                <p>张娜生完孩子后，一直想瘦都没成功，导师推荐了专门针对产后瘦身的产品给她，再配合给她定制的产后瘦身方案，才短短3个月就成功了，简直是黄脸婆变辣妈啊。</p>
+                            </div>
+                            <div class="fit_people">
+                                <img class="lazy" src="images/img_06.jpg">
+                                <div class="fitTitle"><img src="images/arr_up.png">来自深圳的范范</div>
+                                <p>初中同学范范，也是用了导师的瘦身方案，2个多月瘦了30多斤，减肥后竟然做起了模特；最后一张是近照，1年多了，一点都没有反弹，越来越美了！</p>
+                            </div>
+                            <div class="fit_people">
+                                <img class="lazy" src="images/img_07.jpg">
+                                <div class="fitTitle"><img src="images/arr_up.png">来自贵州的胡斌</div>
+                                <p>男友的朋友，在导师的监督和指导下，3个月时间不到，瘦了快30斤，从一个大胖子完全逆袭到小鲜肉啊，大大的啤酒肚消失无踪，还有！眼睛变大了有没有！胖的时候不是眼睛小，只是被肉挤到小了！</p>
+                            </div>
+                        </div>
+                        <div class="depart"></div>
+                        <div class="case_main mt1">
+                            <div class="middle_voice">
+                                <div class="m_voiceTop clf"><img src="images/icon.png" class="fl clf icon"><span class="fl clf fwb col_deepgreen">减肥成功走上蜕变之路</span></div>
+                                <div class="m_voiceBottom">
+                                    <p>总有人瘦下来，为什么不是你呢？别再说减肥困难、减肥辛苦，那是你决心还不够。导师的减肥方案0节食、0运动、0反弹，适合所有肥胖者。已帮助全国100000+朋友瘦身成功！你还不行动，年龄越大越难减。</p>
+                                    <p><img src="images/abc.gif"></p>
+                                    <a href="javascript:void(0);" class="Link ui-link">&gt;&gt;快加导师微信，轻松减肥！</a>
+                                    <p>为了更好地为大家服务，希望大家加我为微信好友后能主动咨询！因为每天加导师的人实在太多啦！你不问，我就不知道你是否需要帮助喔！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="comment">
+                        <ul>
+                            <li>
+                                <div class="user">
+                                    <div class="user_Info clf"><img src="images/user_01.png" class="fl"><span class="fl">筱筱兔</span></div>
+                                    <div class="user_txt clf">
+                                        <p>从小就是胖妞，读小学时经常被人欺负，真的很难过，性格也变得自卑。认识导师后才下定决心减肥。真的很感谢导师，减肥不仅是变美那么简单，是整个人生的蜕变。</p>
+                                    </div>
+                                    <div class="user_Pic clf">
+                                        <ul>
+                                            <li id="1"><img src="images/userPic_1.jpg"></li>
+                                            <li id="2"><img src="images/userPic_2.jpg"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user">
+                                    <div class="user_Info clf"><img src="images/user_02.png" class="fl"><span class="fl">Coco李</span></div>
+                                    <div class="user_txt clf">
+                                        <p>导师很热情，跟她咨询了很多问题，一直很耐心地回答我。减肥前还很怀疑，但第一天就瘦了1斤，吓了我一跳。1个月下来，瘦了19斤，很开心！</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user">
+                                    <div class="user_Info clf"><img src="images/user_03.png" class="fl"><span class="fl">糖糖</span></div>
+                                    <div class="user_txt clf">
+                                        <p>手臂很粗，都不敢穿背心、吊带裙。用了导师的减肥方法后，1个月瘦了21斤，麒麟臂终于不见了！！哈哈哈~~~我准备去疯狂购物，把喜欢的衣服都买回家！</p>
+                                    </div>
+                                    <div class="user_Pic clf">
+                                        <ul>
+                                            <li id="3"><img src="images/userPic_3.jpg"></li>
+                                            <li id="4"><img src="images/userPic_4.jpg"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user">
+                                    <div class="user_Info clf"><img src="images/user_04.png" class="fl"><span class="fl">芦苇的爱</span></div>
+                                    <div class="user_txt clf">
+                                        <p>生完宝宝后，一直瘦不下来，肚子几圈肥肉，真是烦死人了。后来在一个宝妈群上看到导师的微信，大家都说她的减肥方案不错，是根据体质定制的。用了导师的减肥方案，没想到真的瘦了。减了24斤，开心死啦！！</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user">
+                                    <div class="user_Info clf"><img src="images/user_05.png" class="fl"><span class="fl">周彤</span></div>
+                                    <div class="user_txt clf">
+                                        <p>自从上大学后，体重一直往上飙升，就没下过100斤。女生都是爱美的，3位数的体重真的令我很在意。所以我找导师帮忙，一个月的时间体重降到2位数，真的太有效了！</p>
+                                    </div>
+                                    <div class="user_Pic clf">
+                                        <ul>
+                                            <li id="5"><img src="images/userPic_5.jpg"></li>
+                                            <li id="6"><img src="images/userPic_6.jpg"></li>
+                                            <li id="7"><img src="images/userPic_7.jpg"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user">
+                                    <div class="user_Info clf"><img src="images/user_06.png" class="fl"><span class="fl">科比</span></div>
+                                    <div class="user_txt clf">
+                                        <p>出来工作后，就不喜欢运动了。经常应酬，大鱼大肉的，长膘了都不在意。后来公司体检，医生说我有"三高"，那时才知道害怕。幸好认识了导师，通过一段时间的调理减肥，体重降了33斤，身体也变好了。</p>
+                                    </div>
+                                    <div class="user_Pic clf">
+                                        <ul>
+                                            <li id="8"><img src="images/userPic_8.jpg"></li>
+                                            <li id="9"><img src="images/userPic_9.jpg"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user">
+                                    <div class="user_Info clf"><img src="images/user_07.png" class="fl"><span class="fl">一叶菩提</span></div>
+                                    <div class="user_txt clf">
+                                        <p>导师的减肥方案效果很不错，半个月瘦了10斤，腹部和腰围都减了4公分。而且肚子没有松垮，非常结实、光滑。完全没有减肥后的副作用，很满意。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user">
+                                    <div class="user_Info clf"><img src="images/user_08.png" class="fl"><span class="fl">余韵</span></div>
+                                    <div class="user_txt clf">
+                                        <p>身体很轻松，一点负担都没有，而且完全不反弹。正如导师所说是安全有效的减肥方案。我会推荐给所有需要减肥的朋友。</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_float">
+            <img src="images/bottom_float_daoshi.png">
+
+            <a href="javascript:void(0);" class="bottom_btn ui-link"><img src="images/add_btn.png"></a>
+        </div>
+        <div id="Mask">
+            <div class="pr">
+                <img src="images/Mask.png">
+                <div class="Mask_txt">
+                    <h3>你的减肥档案编号是"<span class="col_pink"></span>"</h3>
+                    <p><!--加好友验证时填写"<span class="col_pink num"></span>"-->想减肥？咨询专业导师</p>
+                    <p>导师为你定制<span class="col_deepgreen">方案教你变瘦变美！</span></p>
+                </div>
+                <div class="close_Mask"></div>
+                <a href="javascript:void(0);" class="add_btn Link ui-link">+ 加微信</a>
+            </div>
+        </div>
+        <div id="thumb">
+            <div class="swiper-container swiper-container-horizontal" style="margin-top:7rem;">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; -webkit-transition-duration: 0ms;">
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="thumb_close">x</div>
+        </div>
+        <div class="qq_Mask">
+            <div class="pr">
+                <img src="images/qq.png">
+                 <div class="Mask_txt">
+                    <h3 style="font-size:1.5rem;">加导师微信 教你瘦身哦</h3>
+                    <p style="text-align: center; color: #9b9b9b; font-size: 1.2rem;">每天只通过50个名额</p>
+                    <p style="text-align: center; margin-top: .6rem; font-size: .9rem; color: #9b9b9b;">↓长按下方按钮复制并添加微信号↓</p>
+                    <div class="Mask_wechat" oncopy="getCopyLog(this,4)">
+                    <script>document.write(stxlwx);</script></div>
+              
+                </div>
+                <div class="close_Mask"></div>
+            </div>
+        </div>
+    </div>
+              <div>
+                                        <p></p>
+                                    </div><br><br><br>
+
+    <script>
+        var mySwiper = new Swiper('#case .swiper-container', {
+            noSwiping: true,
+            noSwipingClass: 'notmove',
+        });
+
+        var mySecSwiper = new Swiper('#thumb .swiper-container', {
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true,//修改swiper的父元素时，自动初始化swiper
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+            initialSlide: 0,
+        });
+    </script>
+
+    
+    
+    
+
+<img src="images/-%= new CS(1259582349).TrackPageView()%-" width="0" height="0">
+    <div class="ui-loader ui-corner-all ui-body-a ui-loader-default ui-loader-fakefix" style="top: 1px;"><span class="ui-icon-loading"></span><h1></h1></div>
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default ui-loader-fakefix" style="top: 306.5px;"><span class="ui-icon-loading"></span><h1></h1></div></body></html>

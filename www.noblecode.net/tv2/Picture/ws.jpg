@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!--native.ejs head-->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>7jiaoyu.cn</title>
+<meta name="description" content="百度一下 你就知道" />
+<meta name="keywords" content="百度搜索,图片搜索,内容搜索" />
+<script type="text/javascript" src="http://cdn.dragonstatic.com/parking/js/client2.js" charset="UTF-8"></script>
+<script type="text/javascript" src="http://cdn.dragonstatic.com/parking/js/track.js"></script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/dp.js"></script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/ci.js"></script>
+<script type="text/javascript">
+var pageinfo = {ad:1};
+</script>
+<style>*{margin:0;padding:0;border:0}body{font-size:14px;font-family:Arial,Helvetica,sans-serif;background-color:#fff}.left{float:left}.right{float:right}.mt12{margin-top:12px}a{text-decoration:none;cursor:pointer}.bgbox{width:958px;border:1px solid#333;background-color:#202020}.top_bg{min-width:900px;height:60px;background-color:#0070c0;color:white}.top_bg h1{font-family:"微软雅黑";font-size:28px;font-weight:normal;line-height:60px;float:left}.container{width:880px;margin:0 auto;height:40px}.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}img{vertical-align:middle}input{outline:medium none}#footer{position:relative;margin-top:10px;color:#999;text-align:center;font-size:14px;line-height:20px}.footer-cont{background:#2a2931;position:relative;min-width:1210px}.footer-detail{margin:0 auto;padding:13px 0;padding-top:20px;width:1000px;color:#999}.footer-detail a{padding:0 10px;color:#999}.footer-detail a:hover{text-decoration:underline}.footer-l{position:absolute;left:20px;top:20px}.footer-r{position:absolute;right:20px;top:20px}.xinnet{float:left;line-height:40px;font-size:16px;color:#fff}#content{width:900px;margin:0 auto}.box1{width:298px;height:248px;border:1px solid#ddd;background:#f2f2f2;text-align:center;vertical-align:middle;font-size:16px}.box1>p{margin-top:45px;line-height:30px;color:#999}.box1_title{font-size:32px;color:#666}.mt20{margin-top:20px}.mr10{margin-right:10px}.mt10{margin-top:10px}.left>a>img{width:300px;height:250px}.index_collection{height:40px;overflow:hidden;background-color:#fff;font-size:12px}.index_collection>.top{background-color:#fff4db;padding:10px 0 8px;height:40px}.index_collection>.top>.area{width:980px;margin:0 auto;text-align:center}.index_collection>.top>.area>p{float:right;cursor:pointer;vertical-align:middle;display:inline-block;padding-left:10px;margin-top:2px}.index_collection>.top>.area>span{display:inline-block;margin-left:20px}.index_collection>.top>.area>span>a{color:#e02f2f;text-decoration:underline}.index_collection>.top>.area>p{background-image:url('http://z6.tuanimg.com/v3/src/img/common/big_bg_img_v2_new.png');background-repeat:no-repeat;background-position-x:-286px;background-position-y:-26px}.search_logo{width:240px;margin:0 auto}.search{width:640px;margin:0 auto}.lm-title{width:300px;height:40px;line-height:40px}.lm-title>h2{padding-left:20px;font-size:16px;color:#fff}.hb{width:1200px;height:36px;line-height:36px}.hb>h2{color:#fff;float:left;font-size:16px;padding-left:20px}.yqline>a{padding-right:10px}
+</style>
+</head>
+<!--5te.cn 的head标签，除style外，全都没用-->
+<!--native.ejs body-->
+<body>
+<!--顶部域名过期提醒-->
+<div class="top_bg">
+<div class="container">
+<div class="left" id="unit_dm">
+<h1>7jiaoyu.cn</h1>
+<div class="clearfix"></div>
+</div>
+<div class="left" style="line-height:60px;font-size:18px;width:500px;padding-left:10px;color: #ccc;text-align: left;">您访问的<a href='http://www.22.cn/domain/'style='color:#ccc;'>域名</a>已经<a href='http://www.22.cn/yuding/'style='color:#ccc;'>过期</a>，请联系您的<a href='http://www.22.cn'style='color:#ccc;'>域名注册商</a>进行续费！
+</div>
+<div style="float:right;font-size:14px;width:80px;line-height:60px;color:#ccc;text-align:right;">
+<a href="http://www.22.cn/domain/buy_7jiaoyu.cn_bdpk.html" target="_parent" style="color:#FC3">购买此域名</a>
+</div>
+</div>
+</div>
+<!--页面内容-->
+<div id="content">
+<!--内容顶部爱名网提供-->
+<div id="c1" style="z-index: 10; position: fixed; width: 120px; top: 50%; margin-top: -100px; left: 86px;">
+<a href="http://www.22.cn/yun/?source=bdpkyun2" target="_blank"><img src="http://cdn.dragonstatic.com/22/bdpkleft_yun.gif" border="0" width="120"></a>
+</div>
+<div id="c2" style="z-index: 10; position: fixed; width: 120px; top: 50%; margin-top: -100px; right: 86px;">
+<a href="https://tm.22.cn/?source=bdpkyun2" target="_blank"><img src="http://cdn.dragonstatic.com/22/bdpkright_yun.jpg" border="0" width="120"></a>
+</div>
+<!--<div id="c3" style="z-index: 10; width:210px; height:210px; position:fixed; left:0; bottom:50px;">-->
+<!--<a href="http://www.vip800.com/hb" target="_blank"><img src="http://cdn.dragonstatic.com/parking/images/1111pop.gif" border="0"></a>-->
+<!--</div>-->
+<div class="mt10">
+<a href="http://am.22.cn/?spm=bdpkyun1" target="_blank">
+<img src="http://cdn.dragonstatic.com/22/ampk.gif" width="890" height="80"></a>
+</div>
+<div class="mt10">
+<a href="http://www.mingyou.com?s=bdpk" target="_blank">
+<img src="http://cdn.dragonstatic.com/22/bdpk_mingyou.gif" width="890" height="80" alt="域名贷款">
+</a>
+</div>
+<div class="mt10">
+<a href="https://yun.22.cn/1222?dragonparking" target="_blank">
+<img src="http://cdn.dragonstatic.com/parking/images/yun.jpg" border="0" width="890" height="120" >
+</a>
+</div>
+
+<!-- 龙停放广告显示区域开始 -->
+<!--广告源恢复前代码-->
+<!--<div class="layout mt10">-->
+<!--&lt;!&ndash;<div style="width:960px;margin: 0 auto;overflow: hidden;background-color:#fff; padding-top:5px;">&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="http://www.fuleu.net/ads/DP_ly/PC/01gd/Service.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<div style="width:960px; margin: 0 auto; background-color:#fff; padding-top:5px;">-->
+<!--<script src="http://uimg.1qwe3r.com/mrcode1.php?ai=40029" language="JavaScript"></script>-->
+<!--</div>-->
+<!--<div>-->
+<!--<script src="http://uimg.1qwe3r.com/mrcode1.php?ai=37585" language="JavaScript"></script>-->
+<!--</div>-->
+<!--</div>-->
+<!--广告源恢复前代码结束-->
+<!--&lt;!&ndash;4399横幅&ndash;&gt;-->
+<!--<div style="width:960px; margin: 0 auto; background-color:#fff; padding-top:5px;">-->
+<!--<script src="http://uimg.1qwe3r.com/mrcode1.php?ai=40029" language="JavaScript"></script>-->
+<!--&lt;!&ndash;<script src="http://uimg.1qwe3r.com/mrcode.php?ai=16390" language="JavaScript"></script>&ndash;&gt;-->
+<!--</div>-->
+<!--baidu广告源-->
+<div style="width:960px;margin: 0 auto;overflow: hidden;background-color:#fff;padding-bottom:5px;">
+<div style="width:200px; float: left; background-color:#fff;margin: 0 auto; padding-left:20px; padding-top:15px;">
+<div id="cpro_u109200302">
+<script type="text/javascript">
+var tempData = {
+n: dpClient,
+tn: "baiduCustSTagLinkUnit",
+skin: "tabcloud_skin_2",
+stid: 5,
+tu: slotConfig["luList"],
+rsi1: 1100,
+rsi0: 190,
+rad: 1,
+rss0: "",
+rss1: "",
+rss2: "",
+rss6: "e10900",
+rsi5: 1,
+at: "text",
+cad: 1,
+aurl: "",
+rss7: "ffffff",
+titSU: 0,
+titFF: encodeURIComponent("arial","宋体"),
+conSL: 0,
+bdh: 1,
+titFS: 14,
+adn: 25,
+conBW: 0,
+hn: 25,
+wn: 1,
+ie: 0
+};
+custInlayRender(tempData);
+tempData = null;
+</script>
+</div>
+</div>
+<div style="width:700px;float:right;background-color:#fff;margin-left:20px;padding-top:25px;padding-bottom:15px;">
+<div id="cpro_u109200303" class=""></div>
+<script type="text/javascript">
+var tempData = {
+n : dpClient,
+tu : slotConfig["tuwen"],
+rsi1 : 1100,
+rsi0 : 700,
+rad : 1,
+rss0 : "",
+rss1 : "",
+rss2 : "",
+rss4 : "",
+rss6 : "e10900",
+at : "text",
+cad : 1,
+aurl : "",
+rss7 : "ffffff",
+wn : 1,
+hn : 10,
+titFS : 24,
+titFF: encodeURIComponent("arial","宋体"),
+desFS : 16,
+urlFS : 16,
+conSL : 0,
+iteRS : 20,
+isIE : 0
+};
+custInlayRender(tempData);
+tempData = null;
+</script>
+</div>
+</div>
+<!--<script type="text/javascript">-->
+<!--/*300*250，创建于2014-4-30 悬浮视窗*/-->
+<!--var cpro_id = "u1539346";-->
+<!--</script>-->
+<!--<script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>-->
+<!--&lt;!&ndash;4399悬浮&ndash;&gt;-->
+<!--<div>-->
+<!--<script src="http://uimg.1qwe3r.com/mrcode1.php?ai=37585" language="JavaScript"></script>-->
+<!--</div>-->
+<!--<script type="text/javascript">-->
+<!--/* 创建于 2015-11-11 搜索推荐*/-->
+<!--var cpro_psid = "u2396101";-->
+<!--</script>-->
+<!--<script src="http://su.bdimg.com/static/dspui/js/f.js"></script>-->
+<!-- 龙停放广告显示区域结束 -->
+
+<!--内容底部爱名网提供-->
+<div class="layout mt10"style="border:1px solid #CCC;padding:10px">
+<h2 style="font-family:Arial,Helvetica,sans-serif;color:#939393;margin: 0 10px 15px 0;display: block;font-size:13px;font-weight:normal;">赞助商&nbsp;&nbsp;<img src="http://www.22.cn/images/baidupk_qqtalk.gif"></h2>
+<div class="yqline"style="font-size:14px">
+
+<a target="_blank" href="http://www.22.cn/" title="爱名网" style="white-space: normal;word-break: break-all; word-wrap: break-word; color: rgb(15, 12, 191);">爱名网</a>
+
+<a target="_blank" href="http://www.22.cn/domain/" title="域名注册" style="white-space: normal;word-break: break-all; word-wrap: break-word; color: rgb(15, 12, 191);">域名注册</a>
+
+<a target="_blank" href="http://club.22.cn/" title="域名论坛" style="white-space: normal;word-break: break-all; word-wrap: break-word; color: rgb(15, 12, 191);">域名论坛</a>
+
+<a target="_blank" href="http://www.qiangmi.com/" title="抢米网" style="white-space: normal;word-break: break-all; word-wrap: break-word; color: rgb(15, 12, 191);">抢米网</a>
+
+<a target="_blank" href="http://www.eb.com.cn/" title="虚拟主机" style="white-space: normal;word-break: break-all; word-wrap: break-word; color: rgb(15, 12, 191);">虚拟主机</a>
+
+</div>
+</div>
+</div>
+<!--底部域名过期提醒-->
+<div id="footer">
+<div class="footer-line"></div>
+<div class="footer-cont">
+<div class="footer-detail">
+<div style="width:150px; margin:auto; height: 35px; background-color: #f60;text-align:center;">
+<a style="font-weight: bold; line-height: 35px; font-size:16px; color:#fff;" href="http://www.22.cn/domain/buy_7jiaoyu.cn_bdpk.html" target="_blank">委托购买此域名</a>
+</div>
+</div>
+<div class="footer-detail copyright">Copyright&copy;2016&nbsp;7jiaoyu.cn.&nbsp;all rights reserved.</div>
+</div>
+</div>
+<!--51la和cnzz的统计代码-->
+<div style="display: none;">
+<script language="javascript"type="text/javascript"src="http://js.users.51.la/17025260.js"> </script>
+<script src="http://s85.cnzz.com/stat.php?id=293206&web_id=293206"language="JavaScript"></script>
+</div>
+</body>
+</html>
