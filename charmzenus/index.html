@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="format-detection" content="telphone=no">
+		<meta name="renderer" content="webkit">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+		<title>护肤达人琦琦教你变美~</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/details.css" />
+		<link rel="stylesheet" href="css/details_1.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/attack.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/goods.js"></script>
+		<script type="text/javascript" src="js/region.js"></script>
+		<script type="text/javascript" src="js/cart.js"></script>
+		<script type="text/javascript" src="js/zt.js"></script>
+		<script type="text/javascript" src="js/buttonred.js"></script>
+<script>
+	$(function(){
+        $(".qq_Mask .close_Mask").click(function(){
+			$(".qq_Mask").hide(400);
+		});
+
+		$(".top_r,.bottom_btn,.Link,.top_l").click(function(){
+			$(".qq_Mask").show(400);
+		});	
+
+		// 点击上一题
+		$(".prev").on("click",function(){
+			mySwiper.slidePrev();
+		});
+
+
+		// 导航切换
+		$(".menu li").on("click",function(){
+			$(this).addClass("on").siblings().removeClass("on");
+			var TabIndex = $(this).index();
+			if(TabIndex == 0){
+				$("#case").fadeIn(400);
+				$("#comment").fadeOut(400);
+			}else{
+				$("#comment").fadeIn(400);
+				$("#case").fadeOut(400);
+			}
+		});
+
+		var isPlay = false;
+
+		// 点击播放语音
+		$(".voice").click(function(){
+			if(!isPlay){
+				AudioPlay($(this),".voice_pic");
+				isPlay = true;
+			}else{
+				AudioPause($(this),".voice_pic");
+				isPlay = false;
+			}
+		});
+
+		$(".M_voice").on("click",function(){
+			if(!isPlay){
+				AudioPlay($(this),".Middle_voice");
+				isPlay = true;
+			}else{
+				AudioPause($(this),".Middle_voice");
+				isPlay = false;
+			}
+		});
+
+		$(".audio_bottom").on("click",function(){
+			if(!isPlay){
+				AudioPlay($(this),".bottom_voice");
+				isPlay = true;
+			}else{
+				AudioPause($(this),".bottom_voice");
+				isPlay = false;
+			}
+		});
+
+		// 音频播放函数
+		function AudioPlay(obj,obj_voice){
+			obj.children("audio").get(0).play();
+			obj.children("em,i").hide();
+			obj.children(obj_voice).addClass("on");
+		}
+		// 音频暂停且当前时间设为0函数
+		function AudioPause(obj,obj_voice){
+			obj.children("audio").get(0).pause();
+			obj.children("audio").get(0).currentTime = 0;
+			obj.children(obj_voice).removeClass("on");
+		}
+
+		// 点赞
+		var isLike = false;
+		$(".top_b_like").on("click",function(){
+			if(!isLike){
+				$(this).children("img").attr("src","picture/top_b_like_on.png");
+				var LikeNum = parseInt($(this).children("span").html());
+				$(this).children("span").html(LikeNum + 1);
+				isLike = true;
+			}else{
+				$(this).children("img").attr("src","picture/top_b_like.png");
+				var LikeNum = parseInt($(this).children("span").html());
+				$(this).children("span").html(LikeNum - 1);
+				isLike = false;
+			}
+		});
+
+
+		// 点击评论区小图放大到整屏显示
+		$(".user_Pic li").on("click",function(){
+			var userPicIndex = $(this).attr('id');
+			$("#thumb img").attr('src','/./public/res/images/topic/voice_kiki/'+userPicIndex+'.jpg');
+			$("#thumb").fadeIn(400);
+		});
+
+		$("#thumb").click(function(){
+			$(this).hide(400);
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="main pr">
+		<input type="hidden" id="hosturl" value="m.charmzenus.cn/zt-addfans_kiki240.html">
+			<img src="picture/img_0111.png">
+			<div class="top_box clf">
+					<div class="top_l">
+						<a class="touxiang" href="javascript:void(0);"><img src="img/star_head-sisi.png" class="star_head"></a>
+					</div>
+					<div class="top_c">
+						<p class="clf"><span class="fl">qiqi琦琦教你护肤变美</span><img src="picture/sex.png" class="fl sex"></p>
+						<p class="clf"><span class="fl">高级护肤达人</span><img src="picture/vip.png" class="fl vip"></p>
+						<div class="voice">
+							<audio src="img/top.mp3" id="top_voice">你的浏览器不支持mp3播放！</audio>
+							<img src="picture/voice.png" class="voice_pic">
+							<span>18"</span>
+							<i></i>
+							<img src="picture/border.png" class="border">
+						</div>
+					</div>
+					<div class="top_r">
+						<div class="top_r_box clf">
+							<a href="javascript:void(0);">
+								<div class="add_top">+</div>
+								<span>加好友<br>学护肤</span>
+							</a>
+						</div>
+					</div>
+					<div class="top_b clf">
+						<div class="top_b_people"><img src="picture/top_b_people.png" class="fl"><span class="fl">69824</span></div>
+						<div class="top_b_like" id="buttonRed"><img id="buttonImg" src="picture/top_b_like.png" class="fl"><span class="fl">81091</span></div>
+					</div>
+			</div>			
+		</div>
+		<div class="content">
+			<div class="thame_pic top" id="lazy_img">
+				<div class="menu clf">
+					<ul>
+						<li class="on">我的护肤经历</li>
+						<li>粉丝留言</li>
+					</ul>
+				</div>
+				<div class="change clf">
+					<div id="case">
+						<p>小曼从小就是一个黑妞，脸上还有一小块一小块的斑点。“非洲妹”这个外号伴随了我整个学习生涯，令我非常自卑。所以我特别注重皮肤美白护理。肤色黑，真的很残念！化妆时要涂很多层粉底，才能遮住原本的肤色，而且还不自然，小曼用了网上的很多美白偏方，但是都不成功，也用过n多化妆品，还打过美白针，最终结果不是反弹就是皮肤严重过敏，然而皮肤却一点也没有变白！</p>
+						<h3>以前不护肤美白的时候，就是这样的↓↓↓</h3>
+						<img class="lazy" src="img/img_04.jpg" data-original="/./public/res/images/topic/voice_kiki/img_04.jpg"  style="width:100%;">
+						<p>但女人对于美丽的追求是无止境的，小曼没有放弃，一直在努力寻找彻底美白的方法。功夫不负有心人，我通过琦琦推荐的一套美白皮肤的方法终于丑小鸭变天鹅啦。朋友见到我，个个都问："小曼，你怎么变得那么美！我也要跟琦琦学护肤！"下面是我皮肤美白后的照片。</p>
+						<h3>现在啊，坚持每天护肤美白，真的自信很多</h3>
+						<!--<img class="lazy" src="img/img_05.jpg" data-original="/./public/res/images/topic/voice_kiki/img_05.jpg"  style="width:100%;">-->
+						<img class="lazy" src="img/img_06.jpg" data-original="/./public/res/images/topic/voice_kiki/img_06.jpg"  style="width:100%;">
+						<p>这个方法，不仅能让你的肌肤由内而外变白！还能补水调理皮肤，淡斑！有斑点的人使用也能让皮肤淡化斑点，越来越好！很多女孩想学会适合自己的护肤方式，但苦于不懂得护肤的技巧，所以迟迟没有行动。</p>
+						<p>小曼也是过来人，当初什么都不懂，花了很多冤枉钱，直到得到琦琦的护肤指导才学会正确的护肤方式。所以为了帮助各位爱美的女孩少走歪路，琦琦开始分享自己护肤变美的经历，并且教大家如何选择适合自己的护肤方式。</p>
+						<div class="attack">
+							<div class="attack-a" align="center">
+								<p>无图无真相</p>
+							</div>
+							<p class="attack-p" align="center">下面给大家分享在琦琦帮助下学会护肤逆袭成女神的案例</p>
+						</div>
+						
+						<p class="m1">上班族徐美娜，经常加班。之前没护肤观念，慢慢的皮肤变得黑黄没光泽，斑点布满整张脸。在公司工作多年一直勤奋努力，但升职加薪的机会总轮不到她。用了琦琦的美白嫩肤的方法后，皮肤白嫩细腻，斑点也变少了！现在的肌肤状态超好！公司同事都大吃一惊，老总在一个月前将她<strong>升为部门主管。</strong></p>
+						<div class="attackImg clearfix">
+							<ul>
+								<li>
+									<img src="img/img_07_03.png">
+									<p align="center" style="color: red;">美白前</p>
+								</li>
+								<li>
+									<img src="img/img_07_05.png">
+									<p align="center" style="color: red;">美白后</p>
+								</li>
+							</ul>
+						</div>
+						<p class="m1">菲菲是大一新生，加上残留的化妆品，空气中的灰尘等污染物，使得毛孔里有很多的污垢。脸部倘若不注意适当的清洁，极容易引起皮肤出现毛孔堵塞、晦暗、无光泽等现象。跟着琦琦学会了护肤之后，同时适当保留皮肤脂质，皮肤感觉清爽不紧绷、湿润不滑腻,<strong>被暗恋多年的男神表白！</strong></p>
+						<div class="attackImg clearfix">
+							<ul>
+								<li>
+									<img src="img/img_09_03.png">
+									<p align="center" style="color: red;">清洁前</p>
+								</li>
+								<li>
+									<img src="img/img_09_05.png">
+									<p align="center" style="color: red;">清洁后</p>
+								</li>
+							</ul>
+						</div>
+						<p class="m1">宝妈琳达皮肤修复能力很差，之前晒黑后一直白不回来，脸上留下了晒伤的黑色素沉淀，这让她苦恼了好久！生完孩子后之后脸蛋更加暗黄。在琦琦的方法下，她的皮肤不仅越来越白，晒伤留下的黑色素也没了！别人听说她是一位宝妈的时候完全吓一跳，因为朋友说：琳达的皮肤看起来真的很水嫩很少女呢？所以……<strong>老公对她重燃爱火！</strong></p>
+						<div class="attackImg clearfix">
+							<ul>
+								<li>
+									<img src="img/img_08_05.png">
+									<p align="center" style="color: red;">防晒前</p>
+								</li>
+								<li>
+									<img src="img/img_08_07.png">
+									<p align="center" style="color: red;">防晒后</p>
+								</li>
+							</ul>
+						</div>
+						<div class="title clearfix" style="background: #fe239d; color:#fff; margin: .6rem 0;">学护肤美白开启变美之路</div>
+						<p>肯听琦琦意见，动手护肤美白的女孩都越来越美啦！你会是下一个逆袭的丑小鸭吗？妹子们，变美要趁早！护肤美白变美，你的人生从此变得不一样！</p>
+						<a href="javascript:void(0);" class="Link">》》快加琦琦微信，逆袭变女神！</a>
+						<p>为了更好的为大家服务，希望大家加我为微信好友后能主动咨询！因为每天加琦琦的人实在太多啦！你不问，我就不知道你是否需要帮助喔！</p>
+					</div>
+					<div id="comment">
+						<ul>
+							<li>
+								<div class="user">
+									<div class="user_Info clf"><img src="picture/user_01.png" class="fl"><span class="fl">Smile_陈诗涵</span></div>
+									<div class="user_txt clf">
+										<p>大学刚毕业去面试，前面聊的好好的，然后问说你的皮肤真的很黑耶！然后就没有然后了！！！TnT希望可以求助琦琦~求改变~</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="user">
+									<div class="user_Info clf"><img src="picture/user_02.png" class="fl"><span class="fl">Vivi季茉</span></div>
+									<div class="user_txt clf">
+										<p>一直自己乱用护肤品，不但没白，皮肤还越来越差！加上还用了那些柠檬片敷脸，毛孔都搞大了，想死的心都有！琦琦差不多花了3个多月的时间才把我的皮肤修复好了，时间虽然长了点，但真心值得。</p>
+									</div>
+									<div class="user_Pic clf">
+										<ul>
+											<li id="1"><img src="picture/userpic_1.jpg"></li>
+											<li id="2"><img src="picture/userpic_2.jpg"></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="user">
+									<div class="user_Info clf"><img src="picture/user_03.png" class="fl"><span class="fl">小爱大人</span></div>
+									<div class="user_txt clf">
+										<p>本来是有点效果的，但最近又作死地跑去了三亚玩了1个星期！在海边晒成狗！！！NO ZUO NO DIE啊~琦琦姐求打救啊~~~~</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="user">
+									<div class="user_Info clf"><img src="picture/user_04.png" class="fl"><span class="fl">豆豆鱼子酱</span></div>
+									<div class="user_txt clf">
+										<p>跟着琦琦护肤2个多月了，最大的感受是，有人教真的会走少很多弯路，小曼主要是帮你找到合适的护肤方案，但最终能不能变白主要还是要看自己能不能坚持！</p>
+									</div>
+									<div class="user_Pic clf">
+										<ul>
+											<li id="3"><img src="picture/userpic_3.jpg"></li>
+											<li id="4"><img src="picture/userpic_4.jpg"></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="user">
+									<div class="user_Info clf"><img src="picture/user_05.png" class="fl"><span class="fl">安妮的阿木木</span></div>
+									<div class="user_txt clf">
+										<p>只想说对琦琦姐羡慕嫉妒恨，是不是美的人都特别懂护肤美白</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="user">
+									<div class="user_Info clf"><img src="picture/user_06.png" class="fl"><span class="fl">豆浆油条</span></div>
+									<div class="user_txt clf">
+										<p>总算不用被班里人笑我是黑妹了，姐要亮瞎他们的眼！</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="user">
+									<div class="user_Info clf"><img src="picture/user_07.png" class="fl"><span class="fl">RoseLin</span></div>
+									<div class="user_txt clf">
+										<p>不会护肤美白姐妹们的真的要好好跟琦琦学一下了！我一直苦于大油田的脸蛋，琦琦一教我如何摆脱大油田，现在皮肤变得嫩嫩的，大油田拜拜啦！</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="user">
+									<div class="user_Info clf"><img src="picture/user_08.png" class="fl"><span class="fl">小柯</span></div>
+									<div class="user_txt clf">
+										<p>旅游晒黑的，各种偏方折腾3个月了，都没白回来，快急死了。幸好有琦琦，按她的经验，在防晒、护理上花心思，现在已经慢慢开始变白了，鸡冻！！琦琦么么哒！</p>
+									</div>
+									<div class="user_Pic clf">
+										<ul>
+											<li id="5"><img src="picture/userpic_5.jpg"></li>
+											<li id="6"><img src="picture/userpic_6.jpg"></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="width:100%;height:6rem;"></div>
+		<div class="bottom_float">
+			<img src="img/bottom_touxiang.png" >
+			<div class="audio_bottom">
+				<audio src="img/bottom.mp3" id="last_voice">你的浏览器不支持该类型播放！</audio>
+				<img src="picture/voice.png" class="bottom_voice">
+				<span>11"</span>
+				<em></em>
+			</div>
+			<img src="picture/add_btn.png" class="bottom_btn">
+		</div>
+		<div id="Mask">
+			<div class="pr">
+				<img src="picture/mask.png" >
+				<div class="Mask_txt">
+					<h3>你的肌肤档案编号是“<span class="col_pink"></span>”</h3>
+					<p>加好友验证时填写“<span class="col_pink num"></span>”</p>
+					<p>Alice琦琦为你定制<span class="col_pink">专属妆容</span></p>
+					<p style="text-align: center; margin-top: .6rem; font-size: .9rem;">↓长按下方按钮复制并添加微信号↓</p>
+					<div class="Mask_wechat"  oncopy="getCopyLog(this,3)">Anne888QD</div>
+				</div>
+				<div class="close_Mask"></div>
+			</div>
+		</div>
+		<div id="thumb">
+			<img src="picture/1.jpg" >
+		</div>
+		<div class="qq_Mask">
+			<div class="pr">
+				<img src="picture/qq.png" >
+				<div class="Mask_txt">
+					<h3 style="font-size:1.5rem;">加琦琦微信 教你变美哦</h3>
+					<p style="text-align: center; color: #9b9b9b; font-size: 1.2rem;">每天只通过50个名额</p>
+					<p style="text-align: center; margin-top: .6rem; font-size: .9rem; color: #9b9b9b;">↓长按下方按钮复制并添加微信号↓</p>
+					<div class="Mask_wechat"  oncopy="getCopyLog(this,4)">cici77ddd</div>
+				</div>
+				<div class="close_Mask"></div>
+			</div>
+		</div>
+	
+	    <!-- qq悬浮start  -->
+		<script charset="utf-8" src="js/wpa.js"></script>
+		<script type="text/javascript" src="js/consult.js"></script>
+		<!-- qq悬浮end  -->
+		<script type="text/javascript">
+		$(function(){
+			Online.qqNum = '800094889';
+			Online.qqType = 'enterprise';
+			Online._main();
+		});
+		</script>
+	
+	    <div ><img id="floatQQ" src="picture/floatqq.png" /></div>
+	
+		<script charset="utf-8" src="js/wpa.js"></script>
+		<script type="text/javascript" src="js/consult.js"></script>
+		<script type="text/javascript" src="js/flow.js"></script>
+		<script> 
+		var mySwiper = new Swiper('.swiper-container', {
+			noSwiping : true,
+			noSwipingClass : 'notmove',
+		});
+		$(function(){
+		    Online.qq = true;
+		    flow.wechat = true;
+	    });
+		</script>
+    </body>
+</html>
