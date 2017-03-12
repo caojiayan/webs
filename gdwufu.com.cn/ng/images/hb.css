@@ -1,0 +1,30 @@
+*{ margin: 0px; padding: 0px; font-family: "微软雅黑";}
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+img{border: none;}
+ul li{list-style: none;}
+ul, ol { list-style:none; }
+body { font-weight: lighter; color:#333;font-family:"微软雅黑","黑体","Arial Narrow",HELVETICA; background:#fff;font-size:14px;}
+.clearfix:after{ height:0;content:"."; display:block; visibility:hidden; clear:both; }
+.clearfix{display:block;}
+.clearit{ clear:both; height:0; font-size:0; overflow:hidden; }
+a {color:#333;blr:expression(this.onFocus=this.blur());text-decoration: none;}
+a:hover, a:active{ color:#ac0004; text-decoration:none; }
+
+div  img{display: block; width: 100%; margin: -1px auto 0;}
+
+.relative{position: relative;}
+.absolute .a1{display: block; width: 34.5%; position: absolute; top: 16.1%; left: 24.4%; margin: auto;
+
+	transform:rotate(-3deg);
+	-ms-transform:rotate(-3deg); /* IE 9 */
+	-webkit-transform:rotate(-3deg); /* Safari and Chrome */
+}
+.absolute .a1>img{display: block; width: 100%; margin: auto;}
+.absolute .a2{width: 100%; position: absolute; top: 44%; margin: auto;}
+.absolute .a2>img{display: block; width: 31%; margin: auto;}
+.absolute .a3{width: 100%; position: absolute; top: 65.5%; margin: auto;}
+.absolute .a3>img{display: block; width: 31%; margin: auto;}
+.absolute .a4{width: 100%; position: absolute; top: 92%; margin: auto;}
+.absolute .a4>img{display: block; width: 31%; margin: auto;}
