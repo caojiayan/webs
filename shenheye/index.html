@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+		<title></title>
+	</head>
+	<style>
+		*{
+            margin: 0;
+            padding: 0;
+        }
+		body {
+			max-width: 640px;
+       	    min-width: 320px;
+            font-family: Î¢ÈíÑÅºÚ,"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+            background-color: rgb(255, 255, 255);
+            -webkit-touch-callout: none;
+            width: 100%;
+            margin: 0 auto;
+            left: 27%;
+        }
+        .fopai {max-width: 640px;min-width: 320px;}
+        .fopai img {width: 100%;}
+        /*订单*/
+       .jiange {
+       	    max-width: 640px;
+       	    min-width: 320px;
+       	    background: rgb(172, 29, 16);
+            height: 40px;color: rgb(255, 255, 0);
+            line-height: 40px;
+            text-indent: 2em;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        form{
+    	    max-width: 640px;
+    	    min-width: 320px;
+    	    background: #d9cfa3;
+    	}
+        table tr{
+    	    height: 34px;
+    	    display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+        table tr td:first-child{
+     	    line-height: 30px;
+        }
+        table tr td:last-child{
+     	   vertical-align: text-bottom;
+        }
+        .fontRed{
+     	    color: red;
+        }
+        #mon {
+            line-height: 30px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .typ_tex {
+            width: 200px;
+            height: 22px;
+            text-indent: 6px;
+        }
+        textarea {
+            font-family: monospace;
+            border-color: rgb(169, 169, 169);
+        }
+        textarea {
+            -webkit-appearance: textarea;
+            background-color: white;
+            -webkit-rtl-ordering: logical;
+            flex-direction: column;
+            resize: auto;
+            cursor: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            border-width: 1px;
+            border-style: solid;
+            border-color: initial;
+            border-image: initial;
+            padding: 2px;
+        }
+        #txtGust {
+            width: 200px;
+            height: 80px;
+            text-indent: 6px;
+        }
+        .typ_rese {
+            border-radius: 12px;
+            border: currentColor;
+            border-image: none;
+            width: 100px;
+            height: 26px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            line-height: 26px;
+            font-family: "Î¢ÈíÑÅºÚ";
+            font-size: 16px;
+            margin-top: 4px;
+            background-color: rgb(187, 25, 25);
+        }
+        .bot_zx {
+        	width: 100%;
+            height: 40px;
+            position: fixed;
+            bottom: 0;
+            margin: 0 auto;
+        }
+        .rx-1 {
+            background-color: #ccb966;
+            display: inline-block;
+            width: 50%;
+            height: 40px;
+            float: left;
+            text-align: center;
+            vertical-align: top;
+            font-size: 16px;
+            font-weight: bolder;
+            line-height: 40px;
+            color: #fff;
+        }
+        .rx-1 a {
+            color: #FFF;
+        }
+        .rx-1 img {
+            margin-right: 5px;
+            padding-top: 4px;
+            width: auto;
+        }
+        .rx-2 {
+            background-color: #c60115;
+            font-size: 18px;
+        }
+	</style>
+	<body>
+		<div class="fopai">
+			<img src="imgShenhe/fopai.png" alt="佛牌页面">
+		</div>
+		<!--订单-->
+		<div class="jiange" id="order">购买方式：</div>
+		<form action="" name="myform" method="">
+			<input type="hidden" id="hdtype" name="hdtype" value="BMF-YD" />
+			<input type="hidden" id="hdmon" name="hdmon" value="568" />
+			<table cellpadding="0" cellspacing="0" class="table_1" style="margin: 0 auto;">
+				<tbody>
+					<tr>
+						<td>
+							<span class="fontRed">*</span>价格：
+						</td>
+						<td>
+							<span id="mon" name="mon">198</span>元&nbsp;<span id="bazhe1"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="fontRed">*</span>姓名：
+						</td>
+						<td>
+							<input type="text" id="txtname" name="txtname" autocomplete="off" class="typ_tex"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="fontRed">*</span>电话：
+						</td>
+						<td>
+							<input type="text" id="txtMob" maxlength="11" name="txtMob" autocomplete="off" class="typ_tex"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="fontRed">*</span>地址：
+						</td>
+						<td>
+							<input type="text" id="txtAddress" maxlength="11" name="txtAddress" autocomplete="off" class="typ_tex"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="fontRed">*</span>备注：
+						</td>
+						<td>
+							<textarea id="txtGust" name="txtGust"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="button" class="typ_rese" value="立即购买" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--公司名称-->
+		<p align="center" style="padding:10px 0 40px 0;">公司名称：西安六合珠宝有限公司</p>
+		</form>
+		<!--底部-->
+		<div class="bot_zx">
+			<div class="rx-1">
+				<a href="tel:4006836668">
+					<img src="imgShenhe/phone.png" alt="电话图片" width="21" height="26" id="dhzx" />电话咨询
+				</a>
+			</div>
+			<div class="rx-1 rx-2">
+				<img src="imgShenhe/car.png" alt="立即购买图标" width="21" height="26" id="ljfq" />立即购买
+			</div>
+		</div>
+	</body>
+</html>
