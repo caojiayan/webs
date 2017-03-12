@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>我的减肥经验免费分享！</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <script src="Scripts/jquery-1.8.3.min.js"></script>
+        <script src="Scripts/jquery.mobile.min.js" type="text/javascript"></script>
+        <script src="Scripts/jquery.lazyload.js"></script>
+        <style type="text/css">
+			body{width:100%;height:100%;text-align:left;background:#eaeaea;margin:0px;font-family: "Microsoft YaHei, simsun, Verdana, Geneva, sans-serif";}
+			.Outdiv{max-width:100%;height:auto;zoom:1;margin-left:auto;margin-right:auto;padding:0px 3px 0px 3px;background:white}
+			.Outdiv div{margin-left:auto;margin-right:auto;text-align:left}
+			img{max-width:100%; border:0px;}
+			p{ font: 14px/24px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif; margin: 4px 0;line-height:30px }
+			span{font-weight:bold;background:yellow}
+			.red{color:red}.center{text-align:center}
+			.pichtext{ overflow: hidden; border-radius: 4px; background:#f70ef4;color: #FFFFFF; width:94%;padding:0px 4px 0px 4px;font: 14px/24px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif;line-height:40px; }
+			.nortext{padding:0px 4px 0px 4px;}
+			.nortext p{text-indent:2em}
+			.greentext{ padding: 5px 4px 5px 4px; margin: 4px 0; border-radius: 4px; overflow: hidden; background: #2dada5;line-height:20px;text-align:center;color: #FFFFFF; font: 14px/24px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif;}
+			.redtext{ padding: 0px 4px; overflow: hidden; border-radius: 4px; background: #FF0000;color: #FFFFFF; font: 14px/24px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif;}
+			#pingarea{overflow: hidden; background: #F00;}
+			#pingtitle{text-align: center; height: 34px; overflow: hidden; margin-top: 4px;font: bold 20px/34px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif; color: #FFFFFF;}
+			#pingtxt{height: auto; overflow: hidden; padding: 0 8px;font: 14px/22px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif; color: #FFFFFF;}
+			#pingtb{overflow: hidden; margin-top: 6px;}
+			.show_table{border:1px solid #aaccee;}
+			.show_table tr td{padding: 4px 8px;font: 14px/20px Arial, "微软雅黑", Verdana, sans-serif; color: #666;}
+			.huitb{background: #d0e4f8;}
+			.show_table *{font: 14px/18px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif;}
+			.fahuo{margin:0 auto; overflow: hidden; font: 14px/18px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif;}
+			#ggdjs{font: bold 16px/22px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif;}
+			#footer{height: 40px; overflow: hidden; text-align: center; color: #ccc;font: 14px/30px Microsoft YaHei, simsun, Verdana, Geneva, sans-serif;}      
+			.myscroll { width: 100%; height: 500px; margin: 0 auto; line-height: 26px; font-size: 12px; overflow: hidden;}
+			.myscroll li { height: auto; overflow: hidden;}
+			.myscroll img { border: 0 none;}
+			ul{margin-left:0px;padding:0px}
+			b{color: #1e5cb0; padding: 5px 6px 5px 6px; border-radius: 3px; background: #ffbffe}
+			.scrolltop{height:500px;overflow:hidden;margin:20px auto;}
+			.scrolltop li{height:540px;overflow:hidden;text-align:center;line-height:19px}
+			body{min-width:320px;max-width:640px;margin:0 auto;background:#ededed;font:14px "Microsoft YaHei";color:#333;}
+			p,h1,h2,h3,h4,h5{margin:0;padding:0;}
+			a{text-decoration:none}
+			img{max-width:100%;display:block;}
+			.tc{text-align:center;}
+			.bc{color:#317ECB;}
+			.fl{float:left;}
+			.fr{float:right;}
+			.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+			
+			.wrap{width:100%;margin:0 auto;}
+			.bgmod{margin:15px 10px 0;background: #fff;border:1px solid #ccc;border-radius:3px;}
+			.bgmod .nrcon{padding:10px;}
+			.font20{font-size: 20px;}
+			.font18{font-size: 18px;}
+			.font16{font-size: 16px;margin-top: 10px;text-indent: 2em;}
+			.font14{font-size: 14px;}
+			.bgmod h2{background: #ededed;line-height: 24px;font-size:18px;padding:5px 10px;}
+			.bgmod h3{background: #f43f9b;line-height: 24px;font-size:18px;padding:5px 10px;color: #fff;text-align: center;}
+			.bgmod h4{background: #f00;line-height:30px;font-size:20px;color: #fff;text-align: center;}
+			
+			.tips{background: #fffcdb;padding:10px;color: #787121;font-size: 14px;margin-top: 10px;word-break:break-all;}
+			.tips strong{font-size:18px;background: #f00;color: #fff}
+			.tips p{ text-indent: 2em;margin-top: 10px }
+			.ring{border-top: 1px dotted #ccc;margin-top: 10px}
+			
+			.detaillist{margin: 20px 5px 0; text-align: left;}
+			.detaillist .detail{border-top:1px solid #ddd;min-height:40px;line-height:20px}
+			.detaillist .detail .title{position:relative;line-height:24px;padding:6px 10px 6px 10px;font-size:14px;color:#999999}
+			.detaillist .detail .title span{font-size:12px;line-height:24px;display:inline-block;margin-left:5px}
+			.detaillist .detail .title .arr{background:#aaa;border-radius:3px;padding:0 8px;color:#fff;font-size:14px}
+			.detaillist .detail .title .louzhu{background:#3383e1}
+			.detaillist .detail .content_box .content{line-height:24px;display:block;color:#333;font-size:16px;padding: 0 10px;word-break:break-all}
+			.detaillist .detail .content_box .content .quote_reply{background:#f2f2f2;border:#e7e7e7 1px solid;border-radius:3px;font-size:14px;line-height:24px;margin:0 0 10px;padding:10px}
+			.detaillist .detail .content_box .content .quote_reply span{color:#999;margin-bottom:5px;display:inline-block}
+			.detaillist .detail .content_box small{margin:8px 0px 8px 10px;height:20px;line-height:20px;color:#999}
+			.detaillist .detail .content_box span{line-height:22px}
+			.detaillist .detail .content_box span a{color:#3360a6;display:inline-block;line-height:22px;text-align:center}
+			.detaillist .detail .content_box span a i{width:15px;height:15px;display:inline-block;margin:0 5px 0 0;position:relative;top:4px}
+			.detaillist .detail .content_box span a .huifu{background-position:-40px -20px}
+			.detaillist .detail .content_box .post_handle{padding:0 10px 15px}
+			.detaillist .detail .content_box .post_handle .child_col{display:block;-moz-box-flex:1;-webkit-box-flex:1;width:48%}
+			.detaillist .detail .content_box .post_handle .reply,.detaillist .detail .content_box .post_handle .praise{border-radius:4px;display:block;font-size:20px;line-height:43px;height:43px;text-align:center}
+			.detaillist .detail .content_box .post_handle .reply i,.detaillist .detail .content_box .post_handle .praise i{display:inline-block;width:21px;height:18px;position:relative;top:2px;margin-right:5px}
+			.detaillist .detail .content_box .post_handle .reply{border:1px solid #BFDFFF;background-color:#F0F8FF;color:#398CE0}
+			.detaillist .detail .content_box .post_handle .reply .lz_huifu{background-position:0px -695px}
+			.detaillist .detail .content_box .post_handle .praise{border:1px solid #FFBFBF;background-color:#FFECEC;color:#F1474A}
+			.detaillist .detail .content_box .post_handle .praise .lz_zang{background-position:-40px -695px}
+			.reply_box{color:#000000;font-family:STHeiti Light;margin-bottom:10px}
+			.quote{position:relative;padding:0 10px;background-color:#eeeeee;border:1px solid #dddddd;-moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}
+			.arrow{position:absolute;width:24px;height:13px;left:6%;bottom:-13px;background:url(Images/arrow.png) no-repeat}
+			.quote p{font-size:14px}
+			.quote p.info{color:#666666}
+			.quote .nickname{color:#666666;}
+			
+			.top_tip{ margin:0 auto; position:fixed; left:0; width:100%; bottom:0; background:#ebf7e6;  z-index:99999; padding: 5px; overflow: hidden; max-width:640px; }
+            .top_tip .left_img{ float: left; width:20%; overflow:hidden; max-width:80px; min-width:60px;}
+            .top_tip .r_text{ float: left; width:78%; padding-left:2%;font-size: 16px;line-height: 26px}
+            .top_tip .r_text strong{font-size: 20px;}
+            
+        </style>
+        <script type="text/javascript">
+           $.get("client");
+            // var stxlqq = "";
+            // var arr_qq = ['3102772238'];
+            // var qq_index = Math.floor((Math.random() * arr_qq.length));
+            // stxlqq = arr_qq[qq_index];
+            var arr_wx = [
+                'jfweixin01s',
+                'jj47weixins',
+            ];
+			var wx_index = Math.floor((Math.random() * arr_wx.length));
+				//alert(wx_index);
+            var   stxlwx = arr_wx[wx_index];
+            var  stximg = "<img src='Picture/" + arr_wx[wx_index] + ".jpg' />";
+            var ClientType = ""; //记录终端类型
+            var LastShow = "";
+            var tips = "";
+            var browser = {
+                versions: function () {
+                    var u = navigator.userAgent,
+                                app = navigator.appVersion;
+                    return { //移动终端浏览器版本信息 
+                        trident: u.indexOf('Trident') > -1,
+                        //IE内核
+                        presto: u.indexOf('Presto') > -1,
+                        //opera内核
+                        webKit: u.indexOf('AppleWebKit') > -1,
+                        //苹果、谷歌内核
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+                        //火狐内核
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/),
+                        //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                        //ios终端
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                        //android终端或者uc浏览器
+                        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1,
+                        //是否为iPhone或者QQHD浏览器
+                        iPad: u.indexOf('iPad') > -1,
+                        //是否iPad
+                        webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                    };
+                } (),
+                language: (navigator.browserLanguage || navigator.language).toLowerCase()
+            }
+            if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+                ClientType = "IOS";
+
+            } else if (browser.versions.android) {
+                ClientType = "andriod";
+
+            } else {
+                ClientType = "other";
+            }
+            var Qudao = "";//打开的浏览器
+            function isWeiXin() {
+                var ua = window.navigator.userAgent.toLowerCase();
+                if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            if (isWeiXin()) {
+                Qudao = "wx";
+            }
+            else {
+                Qudao = "qt";
+            }
+
+            function check() {
+                if (window.navigator.cookieenabled)
+                    return true;
+                else {
+                    alert("浏览器配置错误，cookie不可用！");
+                    return false;
+                }
+            }
+            function getCookie(name) { 
+                var start = document.cookie.indexOf(name+"=");
+                var len = start+name.length+1;
+                if ((!start) && (name != document.cookie.substring(0,name.length))) return null;
+                if (start == -1) return null;
+                var end = document.cookie.indexOf(";",len);
+                if (end == -1) end = document.cookie.length;
+                return decodeURI(document.cookie.substring(len,end));  
+           } 
+            
+           function setCookie(name,value,expires,path,domain,secure) { 
+                   expires = expires * 60*60*24*1000;
+                   var today = new Date();
+                   var expires_date = new Date( today.getTime() + (expires) );
+                   var cookieString = name + "=" +encodeURIComponent(value)/** encodeURIComponent(value) 貌似也行**/ +
+                        ( (expires) ? ";expires=" + expires_date.toGMTString() : "") +
+                        ( (path) ? ";path=" + path : "") +
+                        ( (domain) ? ";domain=" + domain : "") +
+                        ( (secure) ? ";secure" : "");
+                   document.cookie = cookieString;
+           }
+
+            //删除cookies
+            function delCookie(name) {
+                var exp = new Date();
+                exp.setTime(exp.getTime() - 1);
+                var cval = getCookie(name);
+                if (cval != null)
+                    document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+            }
+            
+            var a7367of="";
+            var a7367tf="_scoure_url";
+            var a7367pu="";
+            var a7367pf="_scoure_url";
+            	
+            var a7367sf=document.referrer;
+            try{a7367pf=window.parent.document.referrer;}catch(e){}
+            try{a7367tf=top.document.referrer;}catch(e){}
+            	
+            a7367of=a7367sf;
+            	
+            if(a7367pf!=="_scoure_url"){
+            	a7367of=a7367pf;
+            }
+            if(a7367tf!=="_scoure_url"){
+            	a7367of=a7367tf;
+            }
+
+    	    var Request=new UrlSearch();
+    	    
+            jQuery(function () {
+                            jQuery("strong").bind("taphold", tapholdHandler);
+                            function tapholdHandler(event) {
+                        	    var this_ip = "223.73.64.185";
+                				var this_url = Request.this_url;
+                				if(this_url==undefined || this_url=="" ){
+                					this_url=location.href;
+                				}
+                				var this_wx = stxlwx;
+                				var this_id = $(this).attr("id");
+                				var this_surl = GetComUrl();
+                				if(this_surl==undefined || this_surl=="" ){
+                					this_surl=location.href;
+                				}
+
+                				var ___this_source=Request._scoure_url;
+
+              				    if(___this_source==undefined || ___this_source=="" ){
+                				    ___this_source=a7367of;
+                                		}
+
+                				var Clnt = ClientType;
+
+//             					console.log(Clnt);
+            					if (this_id.indexOf("Aimg") >= 0 && Qudao == "qt") {
+            					}
+            					else {
+            						var datakk = { "wxnum": this_wx, "wxid": this_id, "cusip": this_ip, "url": this_url, "source":___this_source , "Clt": Clnt, "Qudao": Qudao };
+            						console.log(datakk);
+            						$.post("http://m.huiyitz.com.cn:81/lw/index.php/home/index/order", datakk, function (rlt) {
+									     console.log(rlt);
+									
+									});
+                                    // ga('send','event','wx',this_wx,this_wx);
+            					}
+                            }
+                        });
+            function getCookie(name){
+            	try{
+            	var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            	if(arr=document.cookie.match(reg))
+            	return unescape(arr[2]);
+            	else
+            	return null;
+            	}catch(e){}
+            }
+
+            function GetComUrl() {
+                var lastUrl = ''; //来源url
+                if (document.referrer.length > 0) {
+                    lastUrl = document.referrer;
+                } try {
+                    if (lastUrl.length == 0 && opener.location.href.length > 0) {
+                        lastUrl = opener.location.href;
+                    }
+                } catch (e) {
+                    lastUrl = window.location.href;
+                }
+                return lastUrl;
+            }
+            function UrlSearch(){
+               var name,value;
+               var str=location.href; //取得整个地址栏
+               var num=str.indexOf("?")
+               str=str.substr(num+1); //取得所有参数   stringvar.substr(start [, length ]
+
+               var arr=str.split("&"); //各个参数放到数组里
+               for(var i=0;i < arr.length;i++){
+                num=arr[i].indexOf("=");
+                if(num>0){
+                 name=arr[i].substring(0,num);
+                 value=arr[i].substr(num+1);
+                 this[name]=value;
+                 }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="Outdiv" id="web" data-role="page" >
+            <div class="top_tip">
+	            <div class="left_img">
+	            	<strong id="imgTop">
+                        <script type="text/javascript">
+                            document.write(stximg); 
+                        </script>   
+                    </strong>
+	            </div>
+	            <div class="r_text">诗诗个人微信：
+	            	<strong id="NO1">
+                        <script type="text/javascript">
+                            document.write(stxlwx); 
+                        </script>     
+                    </strong>
+                    &nbsp;&nbsp;公众号的都是山寨。她朋友圈不定时赠送礼品
+	            </div>
+	        </div>
+            <div class="wrap">
+                <img src='Picture/loading.gif' data-original="https://as.linwenfa.com/fage/10jr/img1white.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/fage/10jr/img2ss.jpg">
+                <div class="bgmod">
+                    <div class="nrcon">
+                        <p class="font20">你还在为肥胖苦恼吗？你还在为瘦身迷茫吗？请给自己五分钟，认真看完全文~~~~~</p>
+                        <div class="tips">
+                    <span class="font16">温馨提示： </span>
+                    <p>有很多粉丝经常看后想再去学习已经找不到网页，强烈建议先关注诗诗微信: <strong id="NO2">
+                        <script type="text/javascript">
+           document.write(stxlwx); 
+          </script>  
+                    </strong>（←长按微信号可以复制），看诗诗粉丝如何蜕变。</p>
+                    <p>诗诗的朋友圈会每天分享粉丝成功瘦身案例 。加诗诗微信,悄悄告诉你，诗诗朋友圈定期会有精美瘦身大礼包免费相送哦，想瘦一起来！</p>
+               </div>
+                <p class="font16">有些人不管怎么吃，即使喝水也胖，总是苦恼为什么自己就是瘦不下来，不管是吃减肥产品，还是去健身房，还是节食~~~~~</p>
+
+               <p class="font16">有些人曾经很瘦，一直认为自己怎么吃都不胖，于是不运动，饮食不节制，最后体重蹭蹭上去了，衣服码数在告诉你，真的胖了~~~</p>
+ 
+               <p class="font16">后来经过朋友介绍，加了诗诗的微信，看着那么多成功的瘦身例子，我也看到了希望，亲身体验后才知道，减肥比你想象中要简单，我们苦苦练瑜伽一个小时才能消耗200卡路里的热量，使用诗诗推荐的<strong><font color="red">瘦身产品</font></strong>，就相当于练瑜伽3.8小时，而且还不需要节食，正常饮食。</p>
+
+               <p class="font16">首先，自我介绍一下，我叫陈晓，是那种宁愿饿死也不愿意动一动的人减肥号吹响啦！冬天啊！要转季啦！该换衣服啦!肥肉还在啊！一定要减掉那些肥肉！</p>
+          </div>
+     </div>
+
+     <div class="bgmod">
+          <h2>先给大家送上我的减肥成果相片</h2>
+          <div class="nrcon">
+               <img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img3.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img4.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img5.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img6.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img7.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img8.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img9.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img10.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img11.jpg">
+
+               <p class="font16">PS：大家看到这里可能难以置信，但是它确实非常神奇！我曾经用了N+1种方法瘦身都没成功，为了感谢诗诗，同时为了帮助更多的朋友摆脱困扰，我下定决心尽我所能，免费宣传它。</p>
+               <p class="font16">想和我一样瘦身成功的，可以加诗诗微信，里面有很多粉丝瘦身成功的心得，可以学习下，还可以免费得到诗诗的瘦身指导！</p>
+              
+
+               <img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img14.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img15.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img16.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img17.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img18.jpg">
+
+               <p class="font16">亲爱的别伤心这个死肥猪已经不在了。</p>
+               
+               <p class="font16">我已有一年多的减肥路史,减肥的原因是男友有点嫌我长得胖,本身感情很好，纯粹为了他以后更加爱我,从此就开始了我的减肥生涯,近三个月来,体重从１7０减到90斤,成功减肥后的感觉真是让人更加轻松,自信的,因有过大半年的屡次失败,不希望其想要减肥的朋友同走弯路.就此向大家分享我的方法——诗诗推荐的<strong><font color="red">瘦身产品</font></strong>,是它，让我重新找到女人的美丽。</p>
+
+               <p class="font16">想和我一样瘦身成功的，可以加诗诗微信，里面有很多粉丝瘦身成功的心得，可以学习下，还可以免费得到诗诗的瘦身指导！</p>
+               
+          </div>
+     </div>
+
+     <div class="bgmod">
+          <h3>自家表妹</h3>
+          <div class="nrcon">
+               <img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img19.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img20.jpg">
+               <p class="font16">表妹曾经也是个胖子，她的身材全败在自己的嘴上，高达131斤的吨位让她体质不好，爱生病。后来加了诗诗的微信，使用了诗诗推荐的<strong><font color="red">中瘦身配方</font></strong>每天还可以获得诗诗的亲自指导。现在表妹身材也越来越苗条了。想加诗诗微信<strong style="color: #f00" id="NO3"><script type="text/javascript">
+           document.write(stxlwx); 
+          </script>  </strong>（←长按微信号可以复制）</p>
+               
+               <img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img21.jpg">
+
+               <p class="font16">表妹试了5天效果就出来了，她开心得不得了。</p>
+
+               <p class="font16">后来也有很多朋友问我怎么减肥的，我告诉他们是认识了诗诗，看看她们现在的身材，别羡慕，你也要行动起来啦~~~</p>
+          </div>
+     </div>
+
+     <div class="bgmod">
+          <h3>瘦身小伙伴</h3>
+          <div class="nrcon">
+               <img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img22.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img23.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img25.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/bin/img26.jpg">
+
+               <p class="font16">来自江西的陈颖虹</p>
+
+               <p class="font16">短短1多个月就从婚礼时的60kg暴涨到66kg，再加上巴厘岛阳光的暴晒，蜜月后又黑又胖，现在都瘦到95斤了。</p>
+
+               <div class="ring">
+                    <p class="font16" style="margin-bottom: 10px">诗诗已经在朋友圈火了，如果你还后知后觉，现在可以行动起来了，别再等别人都瘦下来了，你还在给瘦子当陪衬咯。</p>
+                    <img src='Picture/loading.gif' data-original="pic/img27-new-ss.jpg"><img src='Picture/loading.gif' data-original="https://as.linwenfa.com/fage/ss/img28-new-ss.jpg"><img src='Picture/loading.gif' data-original="pic/img29-new-ss.jpg">
+
+                    <p class="font16 tc">用过都说好，才是真的好！</p>
+                    <p style="white-space: normal;" align="center"><strong id="img1"><script type="text/javascript">
+           document.write(stximg); 
+          </script>   </strong></p>
+                    <p style="white-space: normal;" align="center"><strong id="NO4">为了方便大家，我偷偷的要了她的二维码。大家长按上面的图片3秒识别二维码添加好友</strong></p>  
+					
+               </div>
+          </div>
+          <p class="font16 tc">长按下方按钮复制并添加微信号</p> 
+          <h4><strong id="NO4">
+              <script type="text/javascript">
+           document.write(stxlwx); 
+          </script>  
+          </strong></h4>
+     </div>
+
+     <article class="detaillist">
+         <div id="131303366" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">水水可里</a><span class="fr ">2楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p>我瘦身也承受很多痛苦，被老公嫌弃，真想立马瘦下来，已经加了微信</p>
+                </div>
+                <small class="fl">2017-02-23</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="我瘦身也承受很多痛苦，被老公嫌弃，真想立马瘦下来，已经加了微信" data-pid="131303366" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131307002" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">健身小王子</a><span class="fr ">3楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    谢谢楼主分享那么好瘦身产品，已经加了，希望今年能瘦身成功！
+                    
+                </div>
+                <small class="fl">2017-02-23</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="谢谢楼主分享那么好的瘦身方法，已经加了，希望今年能瘦身成功！" data-pid="131307002" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131310859" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">黑主优姬琳</a><span class="fr ">4楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p></p>
+                    <div class="reply_box">
+                        <div class="quote">
+                            <p class="info">引用第2楼水水可里于2017-02-23 17:29发表的:</p>
+                            <p>
+                                我跟你经历差不多，不管怎么做也不瘦
+                            </p>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p>
+                        我的感受就是，减肥没有人指点，一个人默默的坚持，真的很辛苦，很容易放弃！
+                    </p>
+                </div>
+                <small class="fl">2017-02-24</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="努力坚持中  哈哈哈 [s:494]" data-pid="131310859" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131310868" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">黑主优姬琳</a><span class="fr ">5楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p></p>
+                    <div class="reply_box">
+                        <div class="quote">
+                            <p class="info">引用第3楼健身小王子于2017-02-23 21:35发表的:</p>
+                            <p>
+                                谢谢楼主，已经加了，希望今年能减肥成功
+                            </p>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p>
+                        我介绍了很多朋友，都瘦身成功了，不光你是瘦局部还是瘦全身，都可以
+                    </p>
+                </div>
+                <small class="fl">2017-02-24</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="我在新北区  太远了" data-pid="131310868" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131311759" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">sc19860709</a><span class="fr ">6楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p>就是叫诗诗吧？我之前也加了她，目前肚子小了10厘米，腿也小了3厘米，大概10天时间，不容易啊，我是顽固性的。</p>
+                </div>
+                <small class="fl">2017-02-24</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="就是她？我之前也加了她，目前肚子小了10厘米，腿也小了3厘米，大概10天时间，不容易啊，我是顽固性的。" data-pid="131311759" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131314171" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">悄悄的悄悄的</a><span class="fr ">7楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p>榜样啊</p>
+                </div>
+                <small class="fl">2017-02-24</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="榜样啊" data-pid="131314171" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131314688" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">黑主优姬琳</a><span class="fr ">8楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p></p>
+                    <div class="reply_box">
+                        <div class="quote">
+                            <p class="info">引用第6楼sc19860709于2017-02-24 09:17发表的:</p>
+                            <p>
+                                就是叫诗诗吧？我之前也加了她，目前肚子小了10厘米，腿也小了3厘米，大概10天时间，不容易啊，我是顽固性的。
+                            </p>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p>是的，看来诗诗名气真不小呢，原来你也加了！</p>
+                </div>
+                <small class="fl">2017-02-24</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="等练出来  就晒了 [s:496]" data-pid="131314688" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131314731" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">黑主优姬琳</a><span class="fr ">9楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p></p>
+                    <div class="reply_box">
+                        <div class="quote">
+                            <p class="info">引用第7楼悄悄的悄悄的于2017-02-24 10:29发表的:</p>
+                            <p>榜样啊</p>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p>
+                        我就是管不住嘴，还好现在没有反弹，万幸。
+                    </p>
+                </div>
+                <small class="fl">2017-02-24</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="我就是管不住嘴，虽然不胖，但是肚子是有赘肉的，我努力去练吧，3Q啦 [s:499]" data-pid="131314731" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131315533" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">黄金满地h</a><span class="fr ">10楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p>加油加油！</p>
+                </div>
+                <small class="fl">2017-02-24</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="来高仕美地健身俱乐部吧！！全常州唯一一家拥有女性力量区的健身房！！！" data-pid="131315533" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131316746" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">猫扑走天涯</a><span class="fr ">11楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p>肚子赘肉就是体脂太高，首先就是要降体脂，光靠运动降职效果很慢，而且也容易练成一身的肌肉。</p>
+                </div>
+                <small class="fl">2017-02-24</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="肚子赘肉就是体脂太高，首先就是要降体脂，光靠腹部练习体脂不减是不会有马甲线的" data-pid="131316746" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="131318025" class="detail">
+            <div class="title"><a href="javascript:void(0);" class="bc">黑主优姬琳</a><span class="fr ">12楼</span> </div>
+            <div class="content_box">
+                <div class="content wap_content">
+                    <p></p>
+                    <div class="reply_box">
+                        <div class="quote">
+                            <p class="info">引用第11楼猫扑走天涯于2017-02-24 11:55发表的:</p>
+                            <p>
+                                肚子赘肉就是体脂太高，首先就是要降体脂，光靠运动降职效果很慢，而且也容易练成一身的肌肉。
+                            </p>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p>
+                        运动是一种很环保的健康减肥办法，只是周期太长，过程难以坚持，而且以后停止运动会迅速反弹，我就是活生生的例子，还好遇到了诗诗。
+                    </p>
+                </div>
+                <small class="fl">2017-02-24</small>
+                <span class="fr"><a href="javascript:void(0);" data-reply="那具体怎么来降体脂呢？！" data-pid="131318025" class="fl quotereply"><i class="icon huifu"></i>回复</a></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+    <div style="display:none;">
+        
+    </div>
+
+<script type="text/javascript" charset="utf-8">
+      $(function() {
+          $("img").lazyload({ 
+                 effect: "fadeIn"
+           });  
+      });
+</script>
+<div style=display:none>
+<script src="Scripts/z_stat.js" language="JavaScript"></script>
+</div>
+<div class="center" 	>  
+<SCRIPT type="text/javascript">
+	var checkDoname="";
+	checkDoname=UrlDecode( Request.this_url );
+
+	var donameurls=checkDoname.split("/");
+
+	if(donameurls.length>0)
+	{
+		checkDoname=donameurls[2];
+	}
+	console.log(checkDoname);
+	function UrlDecode(zipStr){ 
+	    var uzipStr=""; 
+	    for(var i=0;i<zipStr.length;i++){ 
+	        var chr = zipStr.charAt(i); 
+	        if(chr == "+"){ 
+	            uzipStr+=" "; 
+	        }else if(chr=="%"){ 
+	            var asc = zipStr.substring(i+1,i+3); 
+	            if(parseInt("0x"+asc)>0x7f){ 
+	                uzipStr+=decodeURI("%"+asc.toString()+zipStr.substring(i+3,i+9).toString()); 
+	                i+=8; 
+	            }else{ 
+	                uzipStr+=AsciiToString(parseInt("0x"+asc)); 
+	                i+=2; 
+	            } 
+	        }else{ 
+	            uzipStr+= chr; 
+	        } 
+	    } 
+	 
+	    return uzipStr; 
+	} 
+	 
+	function StringToAscii(str){ 
+	    return str.charCodeAt(0).toString(16); 
+	} 
+	function AsciiToString(asccode){ 
+	    return String.fromCharCode(asccode); 
+	}
+</SCRIPT>
+</div>
+
+</div>
+
+	<div style="height:100px;">&nbsp;</div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261362843'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261362843' type='text/javascript'%3E%3C/script%3E"));</script>
+    </body>
+</html>
