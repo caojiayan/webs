@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telphone=no">
+<meta name="renderer" content="webkit">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="x5-fullscreen" content="true">
+<meta name="browsermode" content="application">
+<meta name="" renderer""="" content="" webkit|ie-comp|ie-stand""=""> 
+<title>生发达人导师1对1指导生发</title>
+<link rel="stylesheet" href="images/all_jf121.css">
+<link rel="stylesheet" href="images/swiper.min.css">
+<script src="weixin.js" type="text/javascript"></script>
+<script type="text/javascript" src="images/jquery.min.js"></script>
+<script type="text/javascript" src="images/swiper.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// 答案数据
+		var json = [
+			"20岁-29岁2个月以下试过生发，但没成功",
+			"20岁-29岁2个月以下一直想生发，但没有行动",
+			"20岁-29岁2个月以下成功了，还想继续预防脱发",
+			"20岁-29岁3个月试过生发，但体重反弹",
+			"20岁-29岁3个月一直想生发，但没有行动",
+			"20岁-29岁3个月成功了，还想继续预防脱发",
+			"20岁-29岁6个月以上试过生发，但体重反弹",
+			"20岁-29岁6个月以上一直想生发，但没有行动",
+			"20岁-29岁6个月以上成功了，还想继续预防脱发",
+			"30岁-40岁2个月以下试过生发，但体重反弹",
+			"30岁-40岁2个月以下一直想生发，但没有行动",
+			"30岁-40岁2个月以下成功了，还想继续预防脱发",
+			"30岁-40岁3个月试过生发，但体重反弹",
+			"30岁-40岁3个月一直想生发，但没有行动",
+			"30岁-40岁3个月成功了，还想继续预防脱发",
+			"30岁-40岁6个月以上试过生发，但体重反弹",
+			"30岁-40岁6个月以上一直想生发，但没有行动",
+			"30岁-40岁6个月以上成功了，还想继续预防脱发",
+			"40岁以上2个月以下试过生发，但体重反弹",
+			"40岁以上2个月以下一直想生发，但没有行动",
+			"40岁以上2个月以下成功了，还想继续预防脱发",
+			"40岁以上3个月试过生发，但体重反弹",
+			"40岁以上3个月一直想生发，但没有行动",
+			"40岁以上3个月成功了，还想继续预防脱发",
+			"40岁以上6个月以上试过生发，但体重反弹",
+			"40岁以上6个月以上一直想生发，但没有行动",
+			"40岁以上6个月以上成功了，还想继续预防脱发"
+		];
+		// 第一题
+		var question_1='',question_2='',question_3='',Last_question='';
+		$("#first li").on("click",function(){
+			$(this).addClass("on").siblings().removeClass("on");
+			question_1 = $(this).html();
+			mySwiper.slideNext();
+		});
+
+		// 第二题
+		$("#second li").on("click",function(){
+			$(this).addClass("on").siblings().removeClass("on");
+			question_2 = $(this).html();
+			mySwiper.slideNext();
+		});
+
+		// 第三题
+		$("#third li").on("click",function(){
+			$(this).addClass("on").siblings().removeClass("on");
+			question_3 = $(this).html();
+			question_3 = question_3.replace(/[A-Z]+\./g,"");
+
+		});
+
+		// 点击提交弹出对应编号
+		$("#submit_btn").on("click",function(){
+			if(question_3==""){
+				alert("请告诉我们您以前试过防脱发吗！");
+				return;
+			}
+			Last_question = question_1+question_2+question_3;
+			Last_question = $.trim(Last_question);
+			Last_questionIndex = $.inArray(Last_question,json) + 1;
+			$("#Mask .Mask_txt h3 span,#Mask .Mask_txt .num").html(Last_questionIndex);
+			$("#Mask").fadeIn(400);
+		});
+
+		// 点击关闭按钮关闭遮罩层并且将测试返回第一题
+		$("#Mask .close_Mask").on("click",function(){
+			$("#Mask").fadeOut(400);
+			mySwiper.slideTo(0);
+		});
+
+		// 点击上一题
+		$(".prev").on("click",function(){
+			mySwiper.slidePrev();
+		});
+
+
+		// 导航切换
+		$(".menu li").on("click",function(){
+			$(this).addClass("on").siblings().removeClass("on");
+			var TabIndex = $(this).index();
+			if(TabIndex == 0){
+				$("#case").fadeIn(400);
+				$("#comment").fadeOut(400);
+			}else{
+				$("#comment").fadeIn(400);
+				$("#case").fadeOut(400);
+			}
+		});
+	});
+</script>
+
+
+</head>
+<body cz-shortcut-listen="true">	
+<div class="content">
+	<div class="thame_pic topa" id="lazy_img">
+		<div class="menu clf">
+			<ul>
+				<li class="on">定制生发方案</li>
+				
+			</ul>
+		</div>
+		<div class="change clf">
+			<div id="case" style="display: block;">
+				<div id="swiper_container">
+					<div class="swiper-container swiper-container-horizontal">
+						<div class="swiper-wrapper notmove" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+							<div class="swiper-slide swiper-slide-active" style="width: 579px;">
+								<img src="images/test.png">
+								<div class="first" id="first">
+									<div class="tips">剩二题</div>
+									<h3 style="color:#88c20b;margin-top:0;font-size: 1.1rem;font-weight: normal;">测一测你是脱发的主要原因</h3>
+									<h3>1.你的年龄是？</h3>
+									<ul class="clf">
+										<li>20岁-29岁</li>
+										<li class="">30岁-40岁</li>
+										<li class="on">40岁以上</li>
+									</ul>
+								</div>
+							</div>  
+							<div class="swiper-slide swiper-slide-next" style="width: 579px;">
+								<img src="images/test.png">
+								<div class="first">
+									<div class="tips clf"><span class="fl prev">上一题</span>剩一题</div>
+									<h3 style="margin-top:0;">2.你想几个月生发？</h3>
+									<ul class="clf" id="second">
+										<li>2个月</li>
+										<li class="on">3个月</li>
+										<li class="">6个月</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-slide" style="width: 579px;">
+								<img src="images/test.png">
+								<div class="first" id="third">
+									<div class="tips clf"><span class="fl prev">上一题</span></div>
+									<h3 style="margin-top:0;">3.你以前试过防脱发吗？</h3>
+									<ul class="clf">
+										<li class="on">A.试过但是没成功</li>
+										<li class="">B.成功了 还想继续预防脱发</li>
+										<li class="">C.一直想生发，但没有行动</li>
+									</ul>
+									<p><a id="submit_btn">提交</a></p>
+								</div>
+							</div>      
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div id="Mask" style="display: none;">
+	<div class="pr">
+		<img src="images/Mask.png">
+		<div class="Mask_txt">
+			<h3>加导师微信 教你防脱发哦</h3>			
+			<p>导师为你定制<span class="col_deepgreen">方案教你生发！</span></p>
+			<div class="text" style="text-align:center;color: #9b9b9b;"><strong>谢老微信：<strong style="background: #fe4245;color: #fff;padding: .3rem .8rem;border-radius: 2rem;box-shadow: 1px 1px 1px #000;" class="public-name"><script> document.write(stxlwx[0]);</script> </strong> (←长按复制)</strong> </div>
+			
+		</div>
+		<div class="close_Mask"></div>
+		<a href="javascript:window.location.href='weixin://'" class="add_btn Link"  target="_blank" style="text-decoration:none">打开微信</a>
+	</div>
+</div>
+<!--
+<div class="qq_Mask" style="display: none;">
+	<div class="pr">
+		<div class="tp">
+		<img style="width:95%;left:1rem;top:0rem;" src="images/qq.png"></div>
+		<div class="Mask_txt">
+			 <h3 style="font-size:1.5rem;"></h3> 
+			<div style="width:200px; margin:0 auto;"><span class="wx_img"><img src="images/erwm1.jpg" style="margin:0 auto;"> </span></div>
+			<div class="text" style="text-align:center;color: #9b9b9b;"><strong>谢老微信：<strong style="background: #fe4245;color: #fff;padding: .3rem .8rem;border-radius: 2rem;box-shadow: 1px 1px 1px #000;" class="public-name">ssjfr8866</strong> (←长按复制)</strong> </div>
+			<p style=" margin-top:0.3rem; font-size:0.9rem; color: #9b9b9b;">↑长按识别二维码加导师微信↑</p>
+		</div>
+		<div class="close_Mask"></div>
+	</div>
+</div>
+-->
+<script> 
+	var mySwiper = new Swiper('#case .swiper-container', {
+		noSwiping : true,
+		noSwipingClass : 'notmove',
+	});
+
+	var mySecSwiper = new Swiper('#thumb .swiper-container', {
+		observer:true,//修改swiper自己或子元素时，自动初始化swiper
+		observeParents:true,//修改swiper的父元素时，自动初始化swiper
+		prevButton:'.swiper-button-prev',
+		nextButton:'.swiper-button-next',
+		initialSlide :0,
+	});
+</script>
+
+</body>
+</html>
