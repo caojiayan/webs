@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+#middabout
+{
+	overflow:auto;
+	width:900px;
+}
+#middabout blockquote
+{
+	width:820px;
+	margin:auto;
+	font-size:14px;
+	font-family:"宋体","黑体";
+	color:#58595b;
+}
+#middabout blockquote p
+{
+	margin:16px 0px 0px 0px ;
+	font-size:16px;
+	line-height:22-px;
+	text-indent: 2em;
+}
+#middabout blockquote p.lastp
+{
+	text-align:right;
+}
+
+
+/*人才招聘*/
+#middrecru
+{
+	overflow:auto;
+	width:900px;
+}
+#middrecru blockquote
+{
+	width:820px;
+	margin:auto;
+	font-size:14px;
+	font-family:"宋体","黑体";
+	color:#58595b;
+}
+#middrecru h2
+{
+	font-size:"微软雅黑","黑体";
+	font-size:30px;
+	margin:22px 0px 30px 0px ;
+	color:#414042;
+}
+#middrecru h3
+{
+	font-size:16px;
+	font-weight:bold;
+	margin:0px 0px 30px 0px ;
+	color:#414042;
+}
+#middrecru h4
+{
+	font-size:16px;
+	color:#414042;
+	font-weight:bold;
+}
+
+#middrecru dl
+{
+	line-height:26px;
+	font-sizE:14px;
+	color:#6d6e71;
+	margin:0px 0px 30px 0px ;
+}
+
+
+
+
+
+
+
+/*联系我们*/
+#middlcontact
+{
+	overflow:auto;
+	width:900px;
+}
+
+#middlcontact blockquote
+{
+	padding:40px 0px 0px 0px ;
+	width:820px;
+	margin:auto;
+	font-size:14px;
+	color:#58595b;
+}
+#middlcontact blockquote h2
+{
+	font-size:28px;
+	color:#414042;
+}
+
+#middlcontact blockquote p
+{
+	font-size:18px;
+	color:#414042;
+	line-height:32px;
+}
+#middlcontact blockquote img
+{
+	height:534px;
+	width:770px;
+	margin:20px 0px 40px 0px ;
+}
+
+#allmap{
+	margin:20px 0px 0px 0px;
+	width:820px;
+	height:530px;	
+}
+
+/*公司新闻*/
+#middle blockquote
+{
+	float:left;
+	width:893px;
+}
+#news_title
+{
+	margin:20px 0px 0px 0px ;
+	text-align: center;
+}
+#news_date
+{
+    border: 1px solid #f5f5f5;
+    color: #666666;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 15px;
+}
+#news_summary
+{
+    background: #efefef none repeat scroll 0 0;
+    margin-top: 6px;
+    padding: 8px 14px;
+    
+}
+.c{ color: #999999 ;line-height: 26px; text-indent: 4em;   }
+#news_summary p
+{
+	background: #cc3333 none repeat scroll 0 0;
+    color: #fff;
+    padding: 2px 3px;
+    width: 29px;
+    position: absolute;
+	text-align: center;
+}
+#neis
+{
+	color: #333333;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 15px 0;
+    text-indent: 2em;
+}
+
+
+
+
+
+
+

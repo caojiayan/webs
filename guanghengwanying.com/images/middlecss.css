@@ -1,0 +1,461 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+
+
+
+*
+
+{
+
+	font-family:"微软雅黑","黑体";
+
+}
+
+a{
+
+	text-decoration:none;	
+
+	color:#404042;
+
+}
+
+
+
+#header {
+
+    min-width: 1200px;
+
+}
+
+#middle
+
+{
+
+	font-family:"微软雅黑","黑体";
+
+	width:1200px;
+
+	margin:20px auto 0px auto ;
+
+	overflow:auto;
+
+}
+
+
+
+#middlenav
+
+{
+
+	width:238px;
+
+	padding:0px 0px 6px 0px;
+
+	margin:0px 36px 0px 0px ;
+
+	float:left;
+
+	
+
+}
+
+#middlenav dt
+
+{
+    
+    border:1px solid #e33a47;
+	padding:40px 0px 50px 10px;
+    height:62px;
+    border-radius:6px 6px 6px 6px ;
+	font-size:42px;
+    color:#e33a47;
+    margin-bottom:10px;
+
+}
+
+#middlenav dt span
+
+{
+
+	display:block;
+
+	font-size:12px;
+	
+   
+}
+
+
+
+#middlenav dd
+
+{
+
+	background:url(cleckgo.jpg) no-repeat 206px 24px;
+
+	height:70px;
+
+	border:1px solid #e7e7e7;
+
+	border-top:0px;
+
+	padding:0px 0px 0px 44px;
+
+	line-height:70px;
+
+	
+
+}
+
+#middlenav dd.selected
+
+{
+
+	background:#e33a47;
+
+	padding:0px 0px 0px 38px;
+
+	color:#FFF;
+
+}
+
+
+
+#Analyst
+
+{
+
+	float:left;
+
+	width:910px;
+
+}
+
+#Analyst h2
+
+{
+
+	border-left:4px solid #c60000;
+
+	padding:8px  0px 0px 20px;
+
+	font-size:16px;
+
+	margin:0px 0px 14px 0px ;
+
+}
+
+#Analyst blockquote
+
+{
+
+	width:280px;
+
+	float:left;
+
+	margin:0px 22px 20px 0px ;
+
+}
+
+#Analyst blockquote.lasb
+
+{
+
+	margin:0px;
+
+}
+
+#Analyst blockquote img
+
+{
+
+	height:170px;
+
+	width:280px;
+
+}
+
+
+
+#Analyst blockquote dt
+
+{
+
+	font-size:20px;
+
+	text-align:center;
+
+	margin:12px 0px 0px 0px ;
+
+	color:#59595b;
+
+}
+
+#Analyst blockquote dt p
+
+{
+
+	text-align:right;
+
+	font-size:14px;
+
+	cursor:pointer;
+
+}
+
+#Analyst blockquote dd
+
+{
+
+	font-size:12px;
+
+	line-height:24px;
+
+	height:164px;
+
+	color:#6e6e6e;
+
+	font-family:"宋体","黑体";
+
+	overflow:hidden;
+
+}
+
+#Analyst blockquote dd span
+
+{
+
+	font-size:14px;
+
+	background:#c60000;
+
+	color:#FFF;
+
+	padding:2px 7px 2px 7px;
+
+	margin:0px 6px 0px 0px;
+
+}
+
+
+
+
+
+
+
+
+
+/*视频节目*/
+
+#program
+
+{
+
+	float:left;
+
+	width:900px;
+
+}
+
+#program h2
+
+{
+
+	border-left:4px solid #c60000;
+
+	padding:8px  0px 0px 20px;
+
+	font-size:16px;
+
+}
+
+#program h2 a
+
+{
+
+	font-size:12px;
+
+	float:right;
+
+	margin:0px 0px 10px 0px ;
+
+}
+
+#program blockquote
+
+{
+
+	border-top:1px solid #ccc;
+
+	margin:4px 0px 0px 0px ;
+
+	padding:16px 0px 0px 0px ;
+
+	clear:both;
+
+	
+
+}
+
+#program div
+
+{
+
+	clear:both;
+
+	margin:0px 0px 40px 0px ;
+
+	overflow:auto;
+
+}
+
+#program  img
+
+{
+
+	height:116px;
+
+	width:196px;
+
+	cursor:pointer;
+
+}
+
+#program  img.bo
+
+{
+
+	height:50px;
+
+	width:51px;
+
+	float:left;
+
+	margin:0px 10px 0px 0px ;
+
+}
+
+#program a.bofan
+
+{
+
+	clear:both;
+
+	display:block;
+
+	width:452px;
+
+	background:#333333;
+
+	height:50px;
+
+	line-height:50px;
+
+	font-size:16px;
+
+	color:#FFF;
+
+}
+
+#program p 
+
+{
+
+	float:left;
+
+	margin:0px 10px 0px 0px ;
+
+}
+
+#program p span
+
+{
+
+	display:block;
+
+	text-align:center;
+
+	font-size:14px;
+
+}
+
+#program p  span.titles
+
+{
+
+	text-align:left;
+
+	font-size:16px;
+
+}
+
+#program  img.maximg
+
+{
+
+	width:452px;
+
+	height:214px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

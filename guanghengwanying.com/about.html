@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>广州广恒万赢信息科技有限公司_公司简介</title>
+		<meta name="Keywords" content="理财,金融,投资,黄金日,金融,贵金属,铝,非农数据,,ETF持仓,美联储,议息,免费,在线开户,互联网,天津,交易所,原油,原油宝,宁波大宗商品" />
+		<meta name="Description" content="黄金日中国金融投资开创者，国内首批从事金融投资的公司，津贵所创始会员103号，交易平台正规、投资品类丰富、交易机制灵活。提供优质的金融投资服务，24小时客服答疑、一对一专家指导、贴身投顾随叫随到。投资金融首选黄金日！" />
+		<link href="images/global.css" rel="stylesheet" type="text/css" />
+		<link href="images/index.css" rel="stylesheet" type="text/css" />
+		<link href="images/common.css" rel="stylesheet" type="text/css" />
+
+		<!-- <script id="qq_js" type="text/javascript" src="js/Count.js?uin=18" charset="utf-8"></script> -->
+
+		<title>广州广恒万赢信息科技有限公司_中国权威金融投资服务平台</title>
+		<div style="display:none"></div>
+		<link rel="stylesheet" href="images/middlecss.css" type="text/css" />
+		<link rel="stylesheet" href="images/aboutcss.css" />
+	</head>
+
+	<body>
+		<style type="text/css">
+			#middlenav dd a {
+				font-size: 16px;
+			}
+		</style>
+
+		<!--头部开始-->
+
+		<div id="header">
+
+			<h1>
+    <p><img src="images/logo.png" alt="" /> </p>
+    <p  id="user_area" style="display:block;">
+      <input id="islogin" type="hidden" value="false" />
+      <em>400-0012-193</em></p>
+  </h1>
+			<div class="headcc">
+				<ul>
+					<li id="mn_index" class="current">
+						<a href="index-2.html">网站首页</a>
+					</li>
+					<li id="mn_live">
+						<a href="about.html">关于财满楼</a>
+					</li>
+					<li id="mn_institute">
+						<a href="tail.html">产品主页</a>
+					</li>
+					<li id="mn_institute">
+						<a href="hqbj.html">行情报价</a>
+					</li>
+					<li id="mn_institute">
+						<a href="fwzc.html">产品优势</a>
+					</li>
+					<li id="mn_quotation">
+						<a href="lx.html">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--头部结束-->
+
+		<script type="text/javascript">
+			$.dialogBox.defaults.theme = 'tzl';
+
+			function resizeDialogBox(width, height, title) {
+
+				$.dialogBox.resize(width, height);
+
+				if(!common.isEmpty(title)) {
+
+					$.dialogBox.setTitle(title);
+
+				}
+
+			}
+
+			function JsPost(postUrl, postData) {
+
+				var resData = '';
+
+				$.ajax({
+
+					url: postUrl,
+
+					type: 'POST',
+
+					data: postData,
+
+					timeout: 3000,
+
+					async: false,
+
+					error: function() {
+
+						alert('操作失败！请尝试刷新后重试！');
+
+					},
+
+					success: function(str) {
+
+						resData = str;
+
+					}
+
+				});
+
+				return resData;
+
+			}
+
+			function closeDialogBox() {
+
+				$.dialogBox.close();
+
+			}
+
+			function commitdialogBox(url, width, height) {
+
+				$.dialogBox.open({
+
+					title: '提交成功',
+
+					type: 'page',
+
+					boxSize: {
+						"width": width,
+						'height': height
+					},
+
+					isShowTitle: false,
+
+					isIframe: true,
+
+					content: url,
+
+					mask: {
+
+						color: '#000',
+
+						alpha: 0.5
+
+					}
+
+				});
+
+				$(".jqueryDialogBox").css("top", "200px");
+
+			}
+
+			$(function() {
+
+				var reqUrl = "../external.html?link=http://www.viptzl.com/about.jsp";
+
+				$("#mn_index").removeClass("current");
+
+				if(reqUrl.indexOf("images/institute.jsp") > -1) {
+
+					$("#mn_institute").addClass("current");
+
+					$("#mmn_institute").addClass("selected");
+
+					$("#headTitleName").text("研究院");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/institute_class.jsp") > -1) {
+
+					$("#mn_institute").addClass("current");
+
+					$("#mmn_institute_classes").addClass("selected");
+
+					$("#headTitleName").text("研究院");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/institute_program.jsp") > -1) {
+
+					$("#mn_institute").addClass("current");
+
+					$("#mmn_institute_program").addClass("selected");
+
+					$("#headTitleName").text("研究院");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/quotation.jsp") > -1) {
+
+					$("#mn_quotation").addClass("current");
+
+					$("#headTitleName").text("行情报价");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/business.jsp") > -1) {
+
+					$("#mn_business").addClass("current");
+
+					$("#mmn_business").addClass("selected");
+
+					$("#headTitleName").text("业务中心");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/business_service.jsp") > -1) {
+
+					$("#mn_business").addClass("current");
+
+					$("#mmn_business_service").addClass("selected");
+
+					$("#headTitleName").text("业务中心");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/business_cooperation.jsp") > -1) {
+
+					$("#mn_business").addClass("current");
+
+					$("#mmn_business_cooperation").addClass("selected");
+
+					$("#headTitleName").text("业务中心");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/download.jsp") > -1) {
+
+					$("#mn_download").addClass("current");
+
+					$("#headTitleName").text("下载中心");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/news_center.jsp") > -1) {
+
+					$("#mn_news").addClass("current");
+
+					$("#headTitleName").text("新闻中心");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/openaccount.jsp") > -1 || reqUrl.indexOf("images/step2.jsp") > -1 ||
+
+					reqUrl.indexOf("images/step3_1.jsp") > -1 || reqUrl.indexOf("images/step3_2.jsp") > -1 || reqUrl.indexOf("images/step4.jsp") > -1) {
+
+					$("#mn_openaccount").addClass("current");
+
+					$("#headTitleName").text("在线开户");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/about.jsp") > -1) {
+
+					$("#mn_about").addClass("current");
+
+					$("#headTitleName").text("广州广恒万赢信息科技有限公司");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/about_recruitment.jsp") > -1) {
+
+					$("#mn_about").addClass("current");
+
+					$("#headTitleName").text("广州广恒万赢信息科技有限公司");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/about_contact.jsp") > -1) {
+
+					$("#mn_about").addClass("current");
+
+					$("#headTitleName").text("广州广恒万赢信息科技有限公司");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/about_companynews.jsp") > -1) {
+
+					$("#mn_about").addClass("current");
+
+					$("#headTitleName").text("广州广恒万赢信息科技有限公司");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/about_journalism.jsp") > -1) {
+
+					$("#mn_about").addClass("current");
+
+					$("#headTitleName").text("广州广恒万赢信息科技有限公司");
+
+					$("#headTitleName").show();
+
+				} else if(reqUrl.indexOf("images/index.jsp") > -1 || reqUrl.charAt(reqUrl.length - 1) == "index.html") {
+
+					$("#mn_index").addClass("current");
+
+				}
+
+			});
+		</script>
+		<div id="middle">
+			<dl id="middlenav">
+				<dt>财满楼<span>About Investment Joy</span></dt>
+				<dd class="selected" style="cursor:pointer; padding-left:50px;">
+					<a style="color:#fff;" href="index-2.html">网站首页</a>
+				</dd>
+				<dd style="cursor: pointer;">
+					<a href="about.html">关于财满楼</a>
+				</dd>
+				<dd style="cursor: pointer;">
+					<a href="tail.html">产品主页</a>
+				</dd>
+				<dd style="cursor: pointer;">
+					<a href="lx.html">联系我们</a>
+				</dd>
+			</dl>
+			<div id="middabout"> <img src="images/aboutimg1.jpg" alt="广州广恒万赢信息科技有限公司关于财满楼" />
+				<blockquote>
+					<p>广州广恒万赢信息科技有限公司是为投资者提供贵金属金融投资资讯、沟通交流的专业社区网站。</p>
+					<p>财满楼为投资者提供及时、实用、个性的专业服务，分享理财心得，传播投资智慧，帮助投资者学习正确投资理念，不断提升实战技能，为投资者创造卓越的交流学习环境，将财满楼打造成为深受投资者欢迎的金融网络平台。</p>
+
+					<!-- 				<p>成立以来广州广恒万赢信息科技有限公司已取得了显著成绩，到目前为止，广州广恒万赢信息科技有限公司已有10万注册用户。2013年广州广恒万赢信息科技有限公司与津贵所进行战略合作，推出目前国内唯一实现线上自助开户的金融平台。 广州广恒万赢信息科技有限公司的快速发展，使广州广恒万赢信息科技有限公司成为2014腾讯贵金属投资大赛的独家合作商，其中广州广恒万赢信息科技有限公司直播室作为大赛指定直播室，依托众多专家、分析师为广大参赛网友提供24小时在线的专业指导服务。</p>
+
+				 -->
+					<p>在新的历史起点上，财满楼进一步发挥"互联网+"的先发优势，加强集团内部资源整合，完善管理机制，不断提升服务价值，恪守"谨慎稳健，严控风险"的行业原则，追求卓越进步，与客户共享辉煌未来。</p>
+					<p>财满楼上下一心，以引领行业发展，树立行业典范为己任，坚持合规经营、规范发展，积极传播正能量，不断培养用户良好的投资习惯，帮用户树立稳健的投资理念，提升投资水平。</p>
+					<p>财满楼投资平台资质齐全，运营规范，资金安全。通过保证金专户管理，确保用户资金安全。</p>
+					<p>财满楼的理念：</p>
+					<p>赢在智慧、乐在投资，让投资变得更快乐！</p>
+					<p>财满楼的使命：</p>
+					<p>为投资者打造决胜千里的财满楼！</p>
+
+				</blockquote>
+			</div>
+		</div>
+
+		<!--尾部分-->
+
+		<div id="footer">
+			<blockquote>
+				<h4><img src="images/flogo.png" alt="广州广恒万赢信息科技有限公司" /></h4>
+				<ul>
+					<li>
+						<a href="index-2.html">网站首页</a>
+					</li>
+					<li>
+						<a href="about.html">关于财满楼</a>
+					</li>
+					<li>
+						<a href="tail.html">产品主页</a>
+					</li>
+					<li>
+						<a href="lx.html">联系我们</a>
+					</li>
+				</ul>
+				<p><em>&copy;2016-2018 广州广恒万赢信息科技有限公司.版权所有 </em>山东省青岛市黄岛区茂山路
+				</p>
+			</blockquote>
+		</div>
+
+		<!--尾部分结束-->
+
+		<!--尾部分结束-->
+
+	</body>
+
+</html>

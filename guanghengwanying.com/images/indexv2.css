@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.rotate{width:100%;  position:relative;  height:588px; background:#fff; margin-bottom:19px;}	
+.rotate .bd{ margin:0 auto; position:relative; z-index:0;overflow:hidden;  }	
+.rotate .bd ul{ width:100% !important;  }	
+.rotate .bd li{ width:100% !important;  height:588px; overflow:hidden; text-align:center;  }	
+.rotate .bd li a{ display:block; height:588px; }
+
+
+
+
+#target{
+
+	width:100%;
+
+	height:710px;
+
+	background:url(target.jpg)	no-repeat center top;
+
+	min-width:1100px;	
+
+}
+
+#target blockquote{
+
+	width:1100px;
+
+	margin:0px auto 0px auto;
+
+	padding:120px 0px 0px 0px;	
+
+}
+
+#target blockquote h2{
+
+	font-size:62px;
+
+	line-height:100px;
+
+}
+
+#target blockquote h3{
+
+	font-size:28px;
+
+	line-height:48px;
+
+}
+
+#target blockquote p{
+
+	font-size:16px;
+
+	line-height:26px;	
+
+	width:420px;
+
+}
+
+#advantage{
+
+	width:100%;
+
+	height:569px;
+
+	background:url(layer_2.jpg)	no-repeat center top;
+
+	min-width:1100px;
+
+}
+
+#advantage blockquote{
+
+	width:1100px;
+
+	margin:0px auto 0px auto;
+
+	padding:42px 0px 0px 0px;	
+
+	text-align:center;
+
+}
+
+#advantage blockquote h2{
+
+	color:#fff;
+
+	font-size:38px;
+
+	line-height:60px;
+
+}
+
+#advantage blockquote h3{
+
+	color:#fff;	
+
+	font-size:24px;
+
+	line-height:46px;
+
+}
+
+#advantage blockquote p{
+
+	color:#fff;
+
+	font-size:16px;
+
+	line-height:26px;	
+
+}
+
+#reason{
+
+	width:100%;
+
+	height:753px;
+
+	background:url(layer_3.jpg)	no-repeat center top;
+
+	min-width:1000px;
+
+}
+
+#reason div{
+
+	width:1000px;
+
+	margin:0px auto 0px auto;	
+
+	padding:80px 0px 0px 0px;	
+
+	text-align:center;
+
+}
+
+#reason h2{
+
+	color:#000;
+
+	font-size:38px;
+
+	line-height:60px;
+
+	padding:0px 0px 80px 0px;
+
+}
+
+#reason blockquote{
+
+	float:left;
+
+	width:400px;
+
+	height:190px;
+
+	padding:210px 50px 0px 50px;
+
+	background:url(service.png)	no-repeat center top;
+
+}
+
+#reason blockquote:last-child{
+
+	background:url(team.png)	no-repeat center top;
+
+}
+
+#reason blockquote h3{
+
+	font-size:34px;
+
+	line-height:80px;
+
+	font-weight:bold;
+
+	color:#000;
+
+}
+
+#reason blockquote p{
+
+	text-align:left;
+
+	font-size:16px;
+
+	line-height:24px;	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

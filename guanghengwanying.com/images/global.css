@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+
+@charset "utf-8";
+
+/**
+
+ * 青岛银佳汇通商品经营有限公司网站全站公共样式表
+
+ * @author 潘卓平
+
+ *
+
+*/
+
+
+
+
+
+/* 全局定义 */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,hr,input,button,textarea,p,blockquote{margin:0;padding:0}
+
+body{color:#444;font-size:12px;font-family:Arial,SimSun;background:#fff;}
+
+frame{background: transparent;}
+
+ul li{ list-style:none;}
+
+img{ border:0;}
+
+a{ text-decoration:none; color:#000;}
+
+a:hover{ color:#e33b3b;}
+
+
+
+/*通用样式*/
+
+.warp{ width:1000px; margin:auto;*margin:0 auto;}
+
+.w750{ width:750px;}
+
+.al{ text-align:left;}
+
+.ar{ text-align:right;}
+
+.ac{ text-align:center;}
+
+.unline{ text-decoration:underline;}
+
+.pr{ position:relative;}
+
+.pa{ position:absolute;}
+
+.hd_logo{ padding-top:25px;}
+
+.fl{ float:left;}
+
+.fr{ float:right;}
+
+.cf{ clear:both;}
+
+.ff_yh{font-family:"Microsoft YaHei";}
+
+.ff_ss{font-family:"SimSun";}
+
+.fw_b{font-weight:bold;}
+
+.fs_bst{ font-size:24px;}
+
+.fs_b{ font-size:16px;}
+
+.fs_16{font-size:16px;}
+
+.fs_m{ font-size:14px;}
+
+.fs_s{ font-size:12px;}
+
+.hidden{ display:none;}
+
+.c_gray{ color:#888;}
+
+.c_l_red{ color:#f00;}
+
+.c_red{ color:#b71212;}
+
+.c_d_red{ color:#800;}
+
+.c_l_green{ color:#0f0;}
+
+.c_green{ color:green;}
+
+.c_blue{color:#0066cc;}
+
+.c_w{ color:#fff;}
+
+.c_b{ color:#000;}
+
+a.c_w:hover{ color:#FFF;}
+
+
+
+.mr_10{margin-top:10px;}
+
+.mr_15{margin-right:15px;}
+
+.ml_70{margin-left:70px;}
+
+.frm_q{border:1px solid #d5d5d5;}
+
+
+
+.btnRed,.btn_Red{ background:url(btn-red.png) repeat-x center top; height:32px; line-height:32px; border:0; font-weight:bold; color:#fff; padding:0 35px; cursor:pointer;}
+
+.btnRed:hover,.btn_Red:hover{ background-position:0 -32px; color:#fff;}
+
+.btnRed_dis,.btn_Red_dis{ background-position:0 -64px; color: #ccc;}
+
+.btnRed_dis:hover,.btn_Red_dis:hover{ background-position:0 -64px; color: #ccc;}
+
+
+
+.tb750{ background:url(t750-bg.png) no-repeat  center bottom; padding-bottom:70px;}
+
+.bs258{ background:url(shadow258-bg.png) no-repeat center; height:10px;}
+
+.wordBreak{word-break:break-all;white-space:normal;}
+
+
+
+/*页头*/
+
+.p_top{ border-top:2px #8f8f8f solid; background:url(top-bg.png) repeat-x ; padding-bottom:5px; height:33px; line-height:33px; overflow:hidden;}
+
+.top_acc{ background:url(open_acc.png) no-repeat; width:115px; height:34px;}
+
+.top_tel{ background:url(tel.png) no-repeat center center; width:132px; height: 33px; margin-right:13px;}
+
+.top_n{ margin-right:20px;}
+
+.top_n a{ margin:0 3px;}
+
+.top_n .qq{ background:url(top-qq.gif) no-repeat right center; width:22px; height:33px; position:absolute; top:0; }
+
+
+
+.p_hd{ margin-top:13px; height:90px; overflow:hidden;}
+
+.p_hd .logo{ padding-top:15px;}
+
+.p_hd .logo .main{ background:url(logo-split.gif) no-repeat right center; width:214px;}
+
+.p_hd .logo .sub{ margin-left:28px; margin-top:9px;}
+
+
+
+.p_mn{ height:74px; background:url(nav-top-line.png) no-repeat center top; margin-top:16px; padding-top:1px;}
+
+.p_mn .mn,.m_mn .mn{ background:url(mn-bg.png) repeat-x; height:38px; overflow:hidden; border-left:1px #dcdcdc solid; border-right:1px #dcdcdc solid;}
+
+.p_mn .mn a{ float:left; padding:0 20px; background:url(mn-split.gif) no-repeat right center; height:38px; line-height:38px; font-size:14px;font-family:"Microsoft YaHei";}
+
+.p_mn .mn .now{ border-left-color:#ececec; border-bottom-color:#ececec;height:27px; line-height:27px; padding:0 11px; margin-top:5px; margin-right:7px;}
+
+.p_mn .mn_sub{  padding:0 20px; padding-top:4px; background:url(nav-bot-line.png) no-repeat center top #e6e6e6; border-bottom:1px #d2d2d2 solid; height:28px; text-align:justify; line-height:28px;}
+
+.p_mn .mn_sub li{ margin: 0 6px }
+
+.p_mn .mn_sub a{ display:inline-block;}
+
+.p_mn .mn_sub a span{ display:inline-block;font-size:14px;font-weight:bold;margin-right:5px;}
+
+
+
+.p_b{ margin-top:25px;}
+
+.p_line{background:url(p_line.png) no-repeat;height:144px;width:1px;margin:45px 10px 0;}
+
+.p_ft{ border-top:1px #cacaca solid; margin-top:20px;}
+
+.p_ft_n{ background:#f2f2f2; padding:10px 0;}
+
+.p_ft_n .p_bank{ width:140px; padding:16px 10px; overflow:hidden; }
+
+.p_ft_n .p_bank .con{border:1px solid #c9c9c9;}
+
+.p_ft_n .p_bank a{ display:block; margin:8px 0;text-align:center;margin:26px 8px;}
+
+.p_ft_n .p_dian li{ border-radius:5px;width:7px;height:7px;margin:8px 1px;background:#c8c8c8; cursor:pointer;}
+
+.p_ft_n .p_dian .bg_red{background:#b91d1d;}
+
+.p_ft_n .p_basic{width:115px; padding:16px 10px; padding-bottom:0; _margin-left:-3px;}
+
+.p_ft_n .p_basic li{ line-height:20px;}
+
+.p_ft_n .p_invest{width:180px; padding:16px 10px; _width:170px;}
+
+.p_ft_n .p_invest li{line-height:20px; }
+
+
+
+.p_ft{padding-top:15px;}
+
+.p_ft img{margin:21px 22px;}
+
+.p_ft .p_you{margin-top:8px;}
+
+.p_ft .p_you a{font-size:13px;margin:0 10px;}
+
+.p_bottom{border-top:1px #000 dashed;}
+
+.p_ft .copyright{margin-top:20px;font-size:12px;color:#666;}
+
+.p_ft .copyright .mr_l{margin-left:70px;}
+
+
+
+/*金融产品页头*/
+
+.p_til{ border-top:2px #8f8f8f solid; background:url(til_bg.png) repeat-x ; padding-bottom:5px; height:32px; line-height:28px; overflow:hidden;}
+
+.head_acc{ background:url(head_acc.png) no-repeat; width:120px; height:32px;}
+
+.head_tel{background:url(tel.png) no-repeat center center; width:132px; height: 27px; margin-right:13px;}
+
+.top_m span{top:-2px;}
+
+.top_m .shu_z{padding-right:9px;border-right:1px dashed #ccc;margin-right:5px;}
+
+.p_hd .m_til{background:url(mtil_bg.png) repeat-x ;height:19px;line-height:19px;font-size:13px;color:#fff;width:74px;margin-right:35px;}
+
+.head_logo{width:200px;}
+
+.m_mn{ height:74px; background:url(nav-top-line.png) no-repeat center top; margin-top:16px; padding-top:1px;width:792px;}
+
+.m_mn .mn a{ float:left; padding:0 18px; background:url(mn-split.gif) no-repeat right center; height:38px; line-height:38px; font-size:14px;font-family:"Microsoft YaHei";}
+
+.m_mn .yiny{background:url(dh_yiny.png) no-repeat center top;height:6px;}
+
+
+
+.m_bottom{border-top:1px solid #a1a1a1;margin-top:41px;}
+
+/*单行文本溢出样式  */
+
+.ellipsis{width: 280px;
+
+	text-overflow: ellipsis;
+
+	white-space: nowrap;
+
+	overflow: hidden;
+
+	float: left;
+
+}
+
+
+
+
+
+.pagesplit{ height:30px; line-height:30px; text-align:right; padding-right:15px;}
+
+.pagesplit span,.pagesplit a{ margin:0 5px;}
+
