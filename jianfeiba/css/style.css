@@ -1,0 +1,196 @@
+html,body,div,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,button,textarea,iframe,table,th,td{margin:0 auto;padding:0;}
+html{min-width: 320px;}
+body{font-size:100%;font-family:"微软雅黑", "Heiti SC","DroidSans", arial, sans-serif; max-width:640px; text-align:justify;}
+a{text-decoration:none;}
+ul, li{list-style-type:none;}
+img{width:100%; vertical-align:bottom;}
+
+.clear{clear:both;}
+.float-l{float:left !important;}
+.float-r{float:right !important;}
+
+.sec1{max-width: 100%; margin-top:10px; height: 16px; width: 24px; float: left; border-top-width: 6px; border-top-style: solid; border-color: rgb(249, 110, 87); border-left-width: 6px; border-left-style: solid; box-sizing: border-box !important; word-wrap: break-word !important;}
+.sec2{max-width: 100%; margin-top:10px; height: 16px; width: 24px; float: right; border-top-width: 6px; border-top-style: solid; border-color: rgb(249, 110, 87); border-right-width: 6px; border-right-style: solid; box-sizing: border-box !important; word-wrap: break-word !important;}
+.sec3{max-width: 100%; margin-bottom:10px; height: 16px; width: 24px; float: left; border-bottom-width: 6px; border-bottom-style: solid; border-color: rgb(249, 110, 87); border-left-width: 6px; border-left-style: solid; box-sizing: border-box !important; word-wrap: break-word !important;}
+.sec4{max-width: 100%; margin-bottom:10px; height: 16px; width: 24px; float: right; border-bottom-width: 6px; border-bottom-style: solid; border-color: rgb(249, 110, 87); border-right-width: 6px; border-right-style: solid; box-sizing: border-box !important; word-wrap: break-word !important;}
+
+.normal{font-weight:normal !important;}
+h6{margin:5px 0; font-size:1.3em;}
+h6 span{color:#ff0; line-height:1.6em; background:#ff4c00;}
+h6 b{display:block; margin-top:-5px; font-size:.9em; color:#333; background:#fff;}
+
+/*表单*/
+.page-content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f2f4f6;
+}
+.page-content .title {
+    background-color: #ffffff;
+    height: 50px;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: #f5f4f6;
+    border-bottom-width: 1px;
+}
+.title .customName {
+    width: 220px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 50px;
+}
+.title .titleRight {
+    width: 50px;
+    text-align: center;
+    margin-top: 15px;
+    float: left;
+    cursor: pointer;
+}
+.fontRed{
+	color:red;
+}
+.form-apply {
+    border-color: #f5f4f6;
+    border-radius: 4px;
+}
+.form-apply {
+    background-color: #FFFFFF;
+    position: relative;
+}
+.custom-order-form .form-item {
+    overflow: hidden;
+}
+.smart-form-item-require {
+    background: url(/edit/module/smartform/images/smart-require.png) no-repeat scroll rgba(0, 0, 0, 0);
+    background-position: 8px 16px;
+    background-size: 6px 6px;
+}
+
+.form-apply label {
+    padding-left: 20px !important;
+    color: #000 !important;
+}
+.form-apply label {
+    font-size: 14px;
+    color: #999999;
+    display: inline-block;
+    width: 70px;
+    padding-left: 15px;
+}
+.label-item {
+    float: left;
+    margin-top: 12px;
+}
+.custom-order-form .form-area {
+    width: 183px;
+}
+@media only screen and (max-width: 320px) {
+	.custom-order-form .form-area {
+        width: 140px !important;
+    }
+}
+.form-text {
+    height: 27px;
+    line-height: 1.4;
+}
+.form-area {
+    border: none;
+    color: #333333;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    margin: 5px 0;
+    padding: 5px;
+    width: 64%;
+}
+.custom-order-form .form-item {
+    overflow: hidden;
+}
+.smart-form-item-require {
+    background: url(/edit/module/smartform/images/smart-require.png) no-repeat scroll rgba(0, 0, 0, 0);
+    background-position: 8px 16px;
+    background-size: 6px 6px;
+}
+.form-item {
+    clear: both;
+    position: relative;
+}
+.form-apply label {
+    padding-left:50px !important;
+    color: #000 !important;
+}
+
+.form-apply label {
+    font-size: 14px;
+    color: #999999;
+    display: inline-block;
+    width: 70px;
+    padding-left: 15px;
+}
+.label-item {
+    float: left;
+    margin-top: 12px;
+}
+.form-text {
+    height: 27px;
+    line-height: 1.4;
+}
+
+.form-area {
+    border: none;
+    color: #333333;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    margin: 5px 0;
+    padding: 5px;
+    width: 64%;
+}
+.center {
+    text-align: center;
+}
+
+.order_reserve_btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.order_reserve_btn .buttonS {
+    line-height: 40px;
+}
+.order_reserve_btn .buttonS {
+    width: 290px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.btn_bg_color {
+    background-color: #63a0cf;
+}
+.i_mui_button {
+    width: 150px;
+    height: 30px;
+    background:#4C9AFC;;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.item-box{
+	width: 400px;
+	margin: 0 auto;
+}
