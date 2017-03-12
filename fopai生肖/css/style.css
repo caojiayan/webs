@@ -1,0 +1,447 @@
+/* CSS Document */
+html, body, div, span, object, iframe,h1, h2, 
+h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, 
+em, img, ins,kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, 
+ol, ul, li,fieldset, form, label, legend,table, caption, tbody, 
+tfoot,thead,tr, th, td,article, aside, canvas, details, figcaption, 
+figure, footer, header, hgroup, menu, nav, section, summary,time, mark, 
+audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    outline-style:none;/*FF*/ 
+}
+
+body {
+    line-height:1;
+}
+ 
+a{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+     
+}
+a:hover,a:focus{
+    text-decoration:none;
+    bblr:expression(this.onFocus=this.blur());/*IE*/
+    outline-style:none;/*FF*/ 
+    }
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+ 
+input, select {
+    vertical-align:middle;
+}
+
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
+/*通用*/
+p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+/*body*/
+html{
+	margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background: #4F4F4F;
+    font: 14px/22px Arial,"Microsoft YaHei";
+    font-size-adjust: none;
+    font-stretch: normal;
+    color: #464646;
+}
+/*page*/
+#page {
+	max-width: 750px;
+	min-width: 320px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background: #f9f9f9;
+}
+article.showcontent {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+article {
+    line-height: 24px;
+    font-size: 1.0em;
+    -webkit-animation: bounceInkeep .3s .2s linear both;
+    -moz-animation: bounceInkeep .3s .2s linear both;
+}
+.showcontent .btn {
+    padding: 10px;
+}
+.btn {
+	
+    height: auto;
+    clear: both;
+    padding: 5px 0;
+    overflow: hidden;
+}
+article.showcontent img {
+    border: none;
+    margin: 0px 0 0;
+    padding: 0;
+    text-align: center;
+    width: auto;
+    max-width: 100%;
+    float: left;
+}
+.xiaoguo{
+	text-align: center;
+    color: #F00;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 30px;
+}
+/*重要提醒*/
+.tip{
+	text-align: left;
+    color: #F00;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 10px;
+    padding-top: 10px;
+    line-height: 33px;
+}
+/*客户评价*/
+article h2 {
+    background: #EEE9E6;
+    color: #6C594D;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0;
+    clear: both;
+    text-align: left;
+}
+h2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+.comment {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+.comment-inner {
+    width: 100%;
+}
+.comment-name {
+    line-height: 25px;
+    color: #e8373c;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.comment-content {
+    line-height: 25px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666666;
+    border-bottom: 1px dotted #cccccc;
+}
+/*订单*/
+.order {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav_title {
+    background-color: #C20000;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+}
+/*选择产品*/
+
+.ch_products {
+    background: #fff;
+}
+.ch_media-list {
+    list-style: outside none none;
+    padding: 8px 0;
+    margin-top: 12px;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+.ch_media:first-child {
+    margin-top: 0;
+}
+.ch_media, .ch_media-body {
+    overflow: hidden;
+}
+.ch_media {
+    margin-top: 15px;
+}
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+.ch_media-left {
+    width: 30%;
+}
+.ch_media-body, .ch_media-left, .ch_media-right {
+    display: table-cell;
+    vertical-align: middle;
+}
+.ch_media-left {
+    padding-right: 10px;
+}
+.ch_media-body {
+    line-height: 14px;
+    word-wrap: break-word;
+    width: 65%;
+    padding-left: 7%;
+}
+.ch_media-body, .ch_media-left, .ch_media-right {
+    display: table-cell;
+    vertical-align: middle;
+}
+.ch_media, .ch_media-body {
+    overflow: hidden;
+}
+.ch_media-heading {
+    margin-bottom: 5px;
+    margin-top: 0;
+    line-height: 20px;
+}
+
+.ch_products  h4 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+.ch_media-body span {
+    font-size: 0.7em;
+    color: #8c8c8c;
+}
+.ch_title {
+    line-height: 1.6em;
+}
+.ch_products  span {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+.ch_pirce {
+    color: #fd2b30;
+    font-size: 0.95em;
+    margin-right: 10px;
+    vertical-align: middle;
+    float: left;
+    margin-top: 7px;
+}
+.ch_products  a {
+    color: #464646;
+    text-decoration: none;
+    outline-style: none;
+}
+.ch_media-left a img {
+    width: 110px;
+}
+.ch_media-left img {
+    border: 2px solid #ddd;
+    padding: 6px 15px;
+}
+img {
+    border: currentColor;
+    vertical-align: bottom;
+}
+.ch_input{
+	padding-top: 8%;
+	padding-right: 1%;
+	float: left;
+	vertical-align: middle;
+}
+/*信息填写*/
+.or_form {
+    margin: 10px 0;
+    padding: 10px;
+    color: #6d6d6d;
+    background-color: #FFF;
+}
+.or_form_2 {
+    color: #2d2d2d;
+    margin: 15px 10%;
+    font-size: 120%;
+    font-weight: 500;
+}
+.or_form_3 {
+    color: #6b6b6b;
+    margin: 0 5% 8px 10%;
+}
+.or_form_3 input[type="text"] {
+    width: 60%;
+    height: 25px;
+    border: solid #c4c4c4 1px;
+}
+
+.or_form  input {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+.or_form_3 span {
+    color: #f76e5e;
+    margin-left: 10px;
+}
+.or_form_5 {
+    position: relative;
+    margin-left: 24%;
+    width: 45%;
+}
+.or_form_5 span {
+    width: 12%;
+    background-color: #ff0000;
+    height: 26px;
+    color: #FFF;
+    line-height: 26px;
+    display: inline-block;
+    position: absolute;
+    z-index: 99;
+    top: 1px;
+    right: 1px;
+    text-align: center;
+    font-size: 140%;
+}
+.or_form_5 select {
+    border: solid #828282 1px;
+    width: 100%;
+    height: 28px;
+}
+.or_form_5  option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+#anniu {
+    margin: 15px 25%;
+    background-color: #ff0000;
+    color: #FFF;
+    height: 30px;
+    width: 35%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 1px #f1f1f1;
+}
+/*评论轮播*/
+#fahuo {
+                background: #fff;
+                padding: 15px 0px;
+            }
+            #fahuo .con {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 12px;
+                line-height: 200%;
+                background: #EFEFEF;
+                text-align: left;
+                border: 2px solid #a0a0a0;
+            }
+            #fahuo ul {
+                padding: 10px;
+                height: 105px;
+                overflow: hidden;
+            }
+/*底部*/
+.foot {
+    min-width: 320px;
+    max-width: 750px;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+.foot  img {
+    border: currentColor;
+    vertical-align: bottom;
+}
+.foot span {
+    width: 7%;
+    height: 35%;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    font-size: 14px;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+}
+.foot a {
+    display: block;
+    width: 22%;
+    height: 68%;
+    position: absolute;
+    right: 1%;
+    bottom: 7%;
+}
