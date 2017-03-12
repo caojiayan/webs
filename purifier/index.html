@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+        <link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<script>
+			$(document).ready(function(){
+    //验证
+                $('#form').submit(function (){
+                    if($('#name').val()=="")
+                {
+                $('#name').focus();
+                    alert("姓名不能为空！");
+                    return false;
+                }
+		        if($('#tel').val()==""){
+                    $('#tel').focus();
+                    alert("手机号码不能为空！");
+                    return false;
+		        }
+		        if (!$("#tel").val().match(/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/)){
+			       $("#tel").focus();
+			       alert("手机号码格式不正确！");
+			       return false;
+		        }
+		        if($('#hidden_nativeplace').val()=="" || $('#hidden_nativeplace').val()=="0"){
+                    $('#hidden_nativeplace').focus();
+                    alert("地区不能为空！");
+                    return false;
+                }
+		        if($('#address').val()=="")
+                {
+                    $('#address').focus();
+                    alert("地址不能为空！");
+                     return false;
+                }
+            })
+    
+        });
+
+        function pricea(){
+	        var pro = document.form.pro.alt;
+	        for(var i=0;i<document.form.pro.length;i++){
+		    if(document.form.pro[i].checked==true){
+			    var pro = document.form.pro[i].alt;
+			    break;
+		    }
+	    }
+        if(document.form.mun.value=="" || document.form.mun.value==0){	
+		var mun=1;
+	    }
+	     else{
+		   var mun=document.form.mun.value;
+	    }	
+	    var price=pro*mun;
+        //document.getElementById("b1").checked='checked';
+	     document.form.price.value=price;
+	     //document.form.zfbprice.value=price;
+	     document.getElementById("showprice").innerHTML=price;
+	     //document.getElementById("zfbyh").innerHTML='';
+        }
+
+		</script>
+		<div class="main">
+			<!--头部-->
+			<div class="title">
+				<img class="title-Img" src="img/san_01.jpg">
+			    <!--<div class="title-logo">
+				    <img src="img/p30_03.gif" alt="logo"><br />
+				    <p class="title-logo-c" align="center">澳洲原装进口</p>
+			    </div>
+			    <div class="title-m">
+				    <div class="title-m-box">
+					    <p class="m-box-a">SAN-AIR官方旗舰店</p>
+				        <p class="m-box-b">我们的承诺：</p>
+				        <p class="m-box-b">SAN-AIRTm是100%有机产品使用认证的有机原料</p>
+				    </div>
+			    </div>-->
+		    </div>
+		    <script>
+		    	var intDiff = parseInt(80000);//倒计时总秒数量
+                function timer(intDiff){
+	                window.setInterval(function(){
+	                    var day=0,hour=0,minute=0,second=0;//时间默认值		
+	                    if(intDiff > 0){
+		                    day = Math.floor(intDiff / (60 * 60 * 24));
+		                    hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+		                    minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+		                    second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+	                    }
+	                    if (minute <= 9) minute = '0' + minute;
+	                    if (second <= 9) second = '0' + second;
+	                    //$('#day_show').html(day);
+	                    $('#hour_show').html('<s id="h"></s>'+hour);
+	                    $('#minute_show').html('<s></s>'+minute);
+	                    $('#second_show').html('<s></s>'+second);
+	                    intDiff--;
+	                }, 1000);
+                } 
+            $(function(){
+	            timer(intDiff);
+            });
+		    </script>
+		    <!--空气净化棒-->
+		    <div class="cleaning-rod">
+		    	<img src="img/p1.gif" alt="空气净化棒" />
+		    	<section class="buy2">
+	                <div class="box1">
+		                <ul>
+			                <li  class="buy-time-l">2016年年销量达到11561支</li>
+			                <li>
+				                <div class="time-item">
+					            <span>剩余：</span>
+					            <strong id="hour_show">0</strong>：<strong id="minute_show">0</strong>：<strong id="second_show">0</strong>
+					            <!--span class="ww black-font">2</span><span class="ww black-font">4</span>:<span class="ww black-font">3</span><span class="ww black-font">2</span>:<span class="ww black-font">5</span><span class="ww black-font">6</span></span>-->
+				                </div>
+			                </li>
+		                <ul>
+	                </div>
+	            <div class="box2">
+		            <ul>
+			            <li>￥138 <span class="buy-suc-l-del">￥230</span></li>
+			            <li><a href="#buy" class="bg-buy">立即抢购</a></li>
+			            <li>已有 2163 人抢购成功</li>
+		            </ul>
+	            </div>
+            </section>
+            </div>
+		    <!--车内污染-->
+		    <div class="car-pollute">
+		    	<p class="font-g" align="center">你知道吗？</p>
+		    	<p class="font-b" align="center">车内空气污染不比雾霾小</p>
+		    	<p class="font-s" align="center">看得见的污染物</p>
+		    	<img src="img/p2.gif" alt="车污染">
+		    </div>
+		    <div class="car-m">
+		    	<div class="car-m-t">
+		    		<p class="m-t-a" align="center">烈日下暴晒的汽车里真的含有甲醛吗</p>
+		    	    <p class="m-t-b" align="center">经过环保专家的测定，暴晒过的汽车里甲醛含量大大超标</p>
+		    	</div>
+		    	<div class="car-m-m">
+		    		<div class="m-m-a">
+		    			<p align="left">央视《每周质量报告》曝光六款豪车的甲醛严重超标，部分车主身体出现不适，免疫力下降，肺部疾病；<span class="bg-font-a">近90%的汽车存在车内空气甲醛TVOC超标的问题</span>,其中新车的车内空气质量更差。</p>
+		    		</div>
+		    		<div class="m-m-b clearfix">
+		    			<span class="m-m-b-box">甲醛</span>
+		    			<span class="m-m-b-box">苯</span>
+		    			<span class="m-m-b-box">甲苯</span>
+		    			<span class="m-m-b-box">二甲苯</span>
+		    			<span class="m-m-b-box">TVOC</span>
+		    		</div>
+		    		<div class="m-m-img clearfix">
+		    			<div class="m-m-img-box">
+		    				<ul>
+		    					<li>
+		    						<img src="img/a_22.gif" alt="病症">
+		    					</li>
+		    					<li>
+		    						<img src="img/a_24.gif" alt="病症">
+		    					</li>
+		    					<li>
+		    						<img src="img/a_26.gif" alt="病症">
+		    					</li>
+		    				</ul>
+		    		    </div>
+		    		    <div class="m-m-img-box imgBoxFont">
+		    				<ul>
+		    					<li>
+		    						<p align="left">甲醛</p>
+		    				        <p align="left">长期吸入可导致咳嗽、胸闷、甚至致癌。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		    					</li>
+		    					<li>
+		    						<p align="left">苯</p>
+		    				        <p  align="left">长期接触容易引发白血病。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		    					</li>
+		    					<li>
+		    						<p  align="left">甲醛</p>
+		    				        <p  align="left">存在于灰尘之中，是引发过敏性鼻炎的主要元凶之一</p>
+		    					</li>
+		    				</ul>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <!--车内污染say no-->
+		    <div class="car-no">
+		    	<div class="car-no-t">
+		    		<p class="car-no-p" align="center">坚决对车内污染SAY NO！</p>
+		    		<p align="center">净化车内空气，呵护您家人的健康</p>
+		    	</div>
+		    	<div class="">
+		    		<img src="img/j_02.gif" style="width: 100%;">
+		    	</div>
+		    </div>
+		    <!--居家行车必备-->
+		    <div class="car-necessary">
+		    	<p align="center">居家行车必备--给你一个无污染的空间</p>
+		    	<div class="car-necessary-img">
+		    		<img src="img/j_06.gif" alt="居家行车必备">
+		    	</div>
+		    </div>
+		    <!--净化棒详情-->
+		    <div class="purge clearfix">
+		    	<div class="purge-box">
+		    		<div class="purge-box-l">
+		    			<table>
+		    				<tr>
+		    				<td>产&nbsp;&nbsp;品</td>
+		    				<td>SAN-AIR空气净化棒</td>
+		    			    </tr>
+		    			</table>
+		    			<table>
+		    				<tr>
+		    				<td>产&nbsp;&nbsp;地</td>
+		    				<td>澳洲</td>
+		    			</tr>
+		    			</table>
+		    			<table>
+		    				<tr>
+		    				<td>产&nbsp;&nbsp;地</td>
+		    				<td>水、有机认证可降解的生物水蒸，汽蒸精油成分纯天然，环保无害。</td>
+		    			    </tr>
+		    			</table>
+		    			<table>
+		    				<tr>
+		    				<td>产&nbsp;&nbsp;地</td>
+		    				<td>已被证实功效稳定，并可以再空气中持续发挥效力长达二十天。放置在出风口，可有效去除细菌，并可持久发挥效力。</td>
+		    			    </tr>
+		    			</table>
+		    			<table>
+		    				<tr>
+		    				<td>产&nbsp;&nbsp;地</td>
+		    				<td>现有数据表明，本产品无害，且不会引起任何不适或敏感。</td>
+		    			    </tr>
+		    			</table>
+		    			<table>
+		    				<tr>
+		    				<td>产品功效</td>
+		    				<td>净化多种浓烈不安的气味，例如烟味及呕吐味。其多功能有点众多：防霉、防蚊、杀菌、杀螨且不伤害宠物及小孩，也是气管敏感人士的必需品。</td>
+		    				</tr>
+		    			</table>
+		    		</div>
+		    		<div class="purge-box-r">
+		    			<div class="purge-box-l box-r-fix" style="width: 35%;">
+		    				<table>
+		    				<tr>
+		    				<td>净含量</td>
+		    				<td>7g/根</td>
+		    			    </tr>
+		    			</table>
+		    			<table>
+		    				<tr>
+		    				<td>规&nbsp;&nbsp;格</td>
+		    				<td>2根/盒</td>
+		    			    </tr>
+		    			</table>
+		    			<table>
+		    				<tr>
+		    				<td>保质期</td>
+		    				<td>3年</td>
+		    				</tr>
+		    			</table>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <!--净化棒可乐比较-->
+		    <div class="colo clearfix">
+		        <img src="img/j_11.gif" alt="与可乐对比图">
+		    	<p class="colo-p" align="center">实物与335ml灌装可乐对比</p>
+		    </div>
+		    <!--使用方法-->
+		    <div class="usage">
+		    	<p align="lef">使用方法：将净化棒卡在风口即可</p>
+		    	<img src="img/p11.gif" />
+		    </div>
+		    <!--使用场合-->
+		    <div class="usage">
+		    	<p align="lef">使用场合：车内、室内（不超过20平方米）</p>
+		    	<img src="img/p12.gif" />
+		    	<img src="img/p14.gif" />
+		    </div>
+		    <!--细菌类6大图-->
+		    <div class="germ">
+		    	<img src="img/c_03.gif" />
+		    	<img src="img/c_06.gif" />
+		    	<img src="img/c_07.gif" />
+		    	<img src="img/p18.gif" />
+		    	<img src="img/c_09.gif" />
+		    	<img src="img/c_11.gif" />
+		    </div>
+		    <!--好评-->
+		    <div class="good">
+		    	<img src="img/san_26.jpg" alt="评论图片">
+		    </div>
+		    <!--检测报告-->
+		    <div class="testing">
+		    	<div class="testing-t">
+		    		<p class="testing-t-b" align="center">权威性检测报告</p>
+		    		<p class="testing-t-s" align="center">AUTHORIATIVE TEST PEPORT</p>
+		    	</div>
+		    	<img src="img/p23.gif" alt="检测报告">
+		    	<div class="bg-div-s">
+		    		<div class="bg-div-s-box">SAN-AIRTM是澳大利亚一种“通过混合有机香精油制成”的专利产品，该产品能够将微生物降低到较低水平。</div>
+		    	</div>
+		    	<img src="img/p24.gif" alt="检测报告">
+		    	
+		    </div>
+		    <!--订单信息-->
+		    <div class="order">
+		    	<p class="order-t">订单信息<span class="order-t-s">(留下您的联系方式,快递到家,让我们帮你还原清新空气)</span></p>
+		    	<div class="order-form">
+		    		<form>
+		    			<div class="oder-product">
+		    				<p class="oder-product-p" align="left">产品</p>
+		    				<label><input type="radio" name="套餐"/>净化环境【一根空气净化棒&nbsp;两颗芯】138元</label><br />
+		    				<label></label><input type="radio" name="套餐" />成分纯天然【两根空气净化棒&nbsp;两颗芯】238元</label><br />
+		    				<label><input type="radio" name="套餐" />家里车内必备【三根空气净化棒&nbsp;两颗芯】308元</label><br />
+		    				<font>(超过62%的客户选择了此套餐)</font><br />
+		    				<label><input type="radio" name="套餐" />澳洲原装进口【四根空气净化棒&nbsp;两颗芯】368元</label><br />
+		    			</div>
+		    			<div class="order-info clearfix">
+		    				<p>姓名：<input type="text"></p>
+		    				<p>手机：<input type="text"></p>
+		    				<div style="padding-top: 5px;">地区：<span class="xlbox">
+					            <input type='hidden' id='hidden_nativeplace' name='nativeplace' value='0' />
+					            <span id='span_nativeplace'></span>
+					            <span id='span_nativeplace_son'></span>
+					            <span id='span_nativeplace_sec'></span>
+					            <script language="javascript" type="text/javascript" src="http://www.yzyswkj.com/images/enums.js"></script>
+					            <script language='javascript' type='text/javascript' src='http://www.yzyswkj.com/data/enums/nativeplace.js'></script>
+					            <script language="javascript" type="text/javascript">MakeTopSelect("nativeplace", 0);</script>
+				            </span>
+
+		    				</div>
+		    				<p>地址：<input type="text"></p>
+		    				<p>金额：<input type="text"></p>
+		    				<p>付款方式：<label><input type="radio" name="付款" />货到付款&nbsp;&nbsp;</label><label><input type="radio" name="付款"  />在线付款</label></p>
+		    				<div class="order-message">
+		    					<table>
+		    						<tbody>
+		    							<tr>
+		    								<td>
+		    									<p align="left">留言</p>
+		    								</td>
+		    								<td>
+		    									<textarea></textarea>
+		    								</td>
+		    							</tr>
+		    						</tbody>
+		    					</table>
+		    				</div>
+		    			</div>
+		    			<p class="order-phone clearfix">热线订购：020-85011088&nbsp;&nbsp;短信订购：13312828470</p><br />
+		    			<a class="order-submit">立即提交订单</a>
+		    		</form>
+		    	</div>
+		    </div>
+		    <!--订购成功-->
+		    <div id="fahuo">
+	             <div class="con">
+		            <ul>
+			           <li><span>[最新购买]：</span>张**（130****3260）在1分钟前订购了  <font color="#FF0000">√</font></li>
+			           <li><span>[最新购买]：</span>李**（136****7163）在3分钟前订购了  <font color="#FF0000">√</font></li>
+			           <li><span>[最新购买]：</span>赵**（139****1955）在7分钟前订购了  <font color="#FF0000">√</font></li>
+			           <li><span>[最新购买]：</span>刘**（180****6999）在9分钟前订购了  <font color="#FF0000">√</font></li>
+			           <li><span>[最新购买]：</span>周**（151****2588）在4分钟前订购了  <font color="#FF0000">√</font></li>
+			           <li><span>[最新购买]：</span>王**（133****4096）在10分钟前订购了  <font color="#FF0000">√</font></li>
+			           <li><span>[最新购买]：</span>秦**（139****1955）在15分钟前订购了  <font color="#FF0000">√</font></li>
+			           <li><span>[最新购买]：</span>朱**（180****6999）在20分钟前订购了  <font color="#FF0000">√</font></li>
+			           <li><span>[最新购买]：</span>吴**（151****2588）在12分钟前订购了  <font color="#FF0000">√</font></li>
+			           <li><span>[最新购买]：</span>谭**（133****4096）在18分钟前订购了  <font color="#FF0000">√</font></li>
+		            </ul>
+	            </div>
+            </div>
+		    <!--foot-->
+		    <div class="foot">
+		    	<img align="center" src="img/w_03.gif" alt="ICP图标" />
+		    	<p align="center">Copyright&copy; 2016-佳琳贸易公司 版权所有 | 粤ICP备14034212号 -2</p>
+		    	<p align="center">客服电话：020-385011088</p>
+		    </div>
+		    <!--扫描微信-->
+		    <div class="weixin">
+		    	<img src="img/wx.jpg" alt="微信" />
+		    </div>
+        </div>
+        <script>
+            $(function(){
+	                function scollDown(id,time){
+                    var liHeight=$("#"+id+" ul li").height();
+                    var time=time||2500;
+                    setInterval(function(){
+                    $("#"+id+" ul").prepend($("#"+id+" ul li:last").css("height","0px").animate({
+          	            height:liHeight+"px"
+                    },"slow"));
+                },time);
+                }
+	            scollDown("pingjia",3000);
+	            scollDown("fahuo",3000);
+                });
+        </script>
+	</body>
+</html>

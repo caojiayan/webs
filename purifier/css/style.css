@@ -1,0 +1,694 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{font-family: "微软雅黑";}
+body{font-size: 14px;}
+body{
+	max-width: 750px;
+    margin: 0 auto;
+}
+li{
+	list-style: none;
+}
+/*css为clearfix，清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+     height: 0;
+     line-height: 0;
+    display: block;
+     visibility: hidden;
+     clear: both;
+ }
+.clearfix:after{clear:both;} 
+.clearfix{ 
+     *zoom:1;/*IE/7/6*/
+}
+@media only screen and (max-width: 320px) {
+	html{font-size: 10px !important;}
+	body{font-size: 10px !important;}
+	.title .title-m .title-m-box .m-box-a{
+		font-size:20px !important;
+	}
+	.m-box-b{
+		font-size: 8px !important;
+		-webkit-text-size-adjust: 8px;
+	}
+	.cleaning-rod .rod-buy .buy-time .buy-time-l{
+	    font-size: 12px !important;
+	}
+	.car-m .m-t-a{
+		font-size: 16px !important;
+	}
+	.m-m-b{
+	    width:80% !important;
+	}
+	
+	.car-m-m .m-m-img .m-m-img-box{
+	    width: 90%;
+	    margin: 0 auto;
+    }
+    .car-m-m .m-m-img .m-m-img-box img{
+	    margin:5px !important;
+    }
+    .car-no .car-no-p{
+	    font-size: 16px !important;
+    }
+    .car-necessary p{
+	    font-size: 16px 
+	    !important;
+    }
+    .order .order-t{
+	    font-size: 14px !important;
+   }
+   .order .order-t .order-t-s{
+	    font-size: 10px !important;
+    }
+    .good .good-t .good-t-a{
+	    font-size: 15px !important;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+	html{font-size: 10px !important;}
+	body{font-size: 10px;}
+	.title .title-m .title-m-box .m-box-a{
+		font-size:18px;
+	}
+	.m-box-b{
+		font-size: 8px !important;
+		-webkit-text-size-adjust: 8px;
+	}
+	.cleaning-rod .rod-buy .buy-time .buy-time-l{
+	    font-size: 12px !important;
+	}
+	.car-m .m-t-a{
+		font-size: 16px !important;
+	}
+	.car-m .m-t-b{
+		font-size: 10px !important;
+	}
+	.m-m-b{
+	width:80% !important;
+	}
+	.car-no .car-no-p{
+	    font-size: 16px !important;
+    }
+    .car-necessary p{
+	    font-size: 16px !important;
+    }
+    .purge{
+    	height: 250px !important;
+    }
+    .order .order-t{
+	    font-size: 14px !important;
+   }
+   .order .order-t .order-t-s{
+	   font-size: 10px !important;
+    }
+    .good .good-t .good-t-a{
+	    font-size: 15px !important;
+	}
+}
+@media only screen and (min-width: 360px) and (max-width: 360px) {
+   .purge .purge-box .purge-box-r .box-r-fix{
+	padding-top:270px !important;
+   }
+}
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+   .purge .purge-box .purge-box-r .box-r-fix{
+	padding-top:350px !important;
+   }
+   .buy-suc-mmm{
+	padding: 0 20px !important;}
+}
+@media only screen and (min-width: 410px) and (max-width: 460px) {
+   
+   .buy-suc-mmm{
+	padding: 0 35px !important;}
+}
+@media only screen and (min-width: 420px) and (max-width: 768px) {
+   .purge .purge-box .purge-box-r .box-r-fix{
+	padding-top:350px !important;
+   }
+}
+.main{
+	width: 100%;
+}
+/*头部*/
+.title{
+	width:100%;
+	color: #000;
+	font-weight: bold;
+	background-color:#eee;
+}
+.title .title-Img{
+	width: 100%;
+}
+.title .title-logo{
+	padding-top:25px;
+	width: 30%;
+	float: left;
+}
+.title .title-logo img{
+	width: 90%;
+	margin-left:5%;
+}
+.title .title-logo p{
+	width:100%;
+}
+
+.title .title-m{
+	padding-top:20px;
+	width: 69%;
+	float: right;
+	border-left: 1px solid #000;
+}
+
+.title .title-m .title-m-box{
+	width:90%;
+	margin: 0 auto;
+}
+.title .title-m .title-m-box .m-box-a{
+	font-size:24px;
+	color: rgb(13,124,189);
+}
+
+
+/*空气净化棒*/
+.cleaning-rod{
+	width: 100%;
+}
+.cleaning-rod .rod-t{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #000;
+	color: #fff;
+}
+.cleaning-rod .rod-t .rod-t-m{
+	padding-left:10px;
+}
+.cleaning-rod img{
+	width: 100%;
+}
+
+.cleaning-rod .rod-buy{
+	width: 100%;
+}
+.cleaning-rod .rod-buy .buy-time{
+	height: 35px;
+	padding: 0 10px;
+	line-height: 35px;
+	background: rgb(50,177,108);
+	border-bottom: 1px solid #fff;
+}
+.buy-time-l{
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+	text-shadow: 2px 0px 2px #fff;
+}
+.cleaning-rod .rod-buy .buy-time .buy-time-r{
+	float: right;
+	color: #fff;
+}
+.ww{
+	padding: 2px;
+	margin-right: 2px;
+	background-color: #fff;
+} 
+.black-font{
+	color: #000 !important;
+}
+.cleaning-rod .rod-buy .buy-suc{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	background: rgb(50,177,108);
+}
+.cleaning-rod .rod-buy .buy-suc .buy-suc-l{
+	font-size: 18px;
+	padding-right: 10px;
+}
+.buy-suc-l-del{
+	text-decoration: line-through;
+	font-size: 10px;
+}
+
+
+.cleaning-rod .rod-buy .buy-suc .buy-suc-c{
+	height: 25px;
+	width: 50px;
+	margin: 0 10px;
+	background: url(../img/a_09.gif) no-repeat center center;
+	background-size: cover; 
+}
+ .rod-buy .buy-suc .buy-suc-r{
+ 	font-size: 12px;
+ 	padding-left: 5px;
+ }
+ /*立即抢购*/
+.cleaning-rod .rod-buy {
+    width: 100%;
+}
+.buy2 {
+    background: #32b16c;
+    overflow: hidden;
+}
+section {
+    display: block;
+}
+.buy2 .box1 {
+    border-bottom: 1px #ddd solid;
+    overflow: hidden;
+}
+.buy2 .box1 ul li {
+    float: left;
+    width: 50%;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0px;
+}
+.buy2 .box2 {
+    padding: 5px 0px;
+    overflow: hidden;
+}
+.buy2 .box2 ul li:nth-child(1) {
+    min-width: 30%;
+}
+.buy2 .box2 ul li {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border-right: 1px #ddd dotted;
+}
+.buy2 .box2 ul li:nth-child(2) {
+    min-width: 30%;
+}
+.buy2 .box2 ul li {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border-right: 1px #ddd dotted;
+}
+.buy2 .box2 ul li:last-child {
+    min-width: 39%;
+    border-right: 0px;
+    font-size: 12px;
+    line-height: 27px;
+}
+.buy2 .box2 ul li {
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border-right: 1px #ddd dotted;
+}
+.bg-buy{
+	font-size: 14px;
+	padding: 2px 3px;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+	background-color: rgb(240,163,0);
+}
+
+.buy-suc-mmm{
+	padding: 0 10px;
+	border-left: 1px dashed #fff;
+	border-right: 1px dashed #fff;
+}
+.buy-suc-mm{
+	padding: 2px 3px;
+	border-radius: 5px;
+	background-color: rgb(240,162,0);
+}
+
+/*车污染*/
+.car-pollute{
+    padding-top:10px;
+	width: 100%;
+}
+.car-pollute .font-g{
+	font-size: 20px;
+	color: rgb(243,152,0);
+}
+.car-pollute .font-b{
+	font-weight: bold;
+}
+.car-pollute  .font-s{
+	font-size: 10px;
+}
+.car-pollute .font-small{
+	font-size:5px;
+}
+.car-pollute img{
+	width: 100%;
+}
+/*烈日下暴晒*/
+.car-m{
+	width: 100%;
+}
+.car-m .car-m-t{
+	padding: 5px 0;
+	background-color: rgb(243,152,0);
+}
+.car-m .m-t-a{
+	font-size: 20px;
+	color: #fff;
+}
+.car-m .m-t-b{
+	font-size: 12px;
+	color: #000;
+}
+.car-m .car-m-m{
+	background: url(../img/b_02.gif) no-repeat center center;
+	background-size: 100%;
+}
+.m-m-a{
+	width: 100%;
+    color: red;
+}
+.m-m-a p{
+	padding-top: 10px;
+	font-size: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.m-m-b{
+	width:70%;
+	padding-top: 60px;
+	text-align: center;
+	margin: 0 auto;
+}
+.m-m-b .m-m-b-box{
+	display: block;
+	float: left;
+	margin: 5px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 20px;
+	color: #fff;
+	background-color: red;
+}
+.car-m-m .m-m-img {
+	background-color: #000;
+}
+.car-m-m .m-m-img .m-m-img-box{
+	padding-left: 5%;
+	background-color: #000;
+}
+.car-m-m .m-m-img .m-m-img-box ul{
+	width: 100%;
+	margin:0 auto;
+}
+.car-m-m .m-m-img .m-m-img-box ul li{
+	width: 30%;
+	display: inline-block;
+}
+.car-m-m .m-m-img .m-m-img-box ul li img{
+	border: 1px solid red;
+	width: 100%;
+}
+.imgBoxFont{
+	font-size: 10px;
+	color: #fff;
+}
+.car-no{
+	
+}
+.car-no .car-no-t{
+	width: 100%;
+	padding: 5px 0;
+	background-color: red;
+	color: #fff;
+}
+.car-no .car-no-p{
+	font-size: 20px;
+}
+.car-necessary{
+	width:100%;
+}
+.car-necessary p{
+	padding: 20px 0 0 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(2,130,204);
+}
+.car-necessary  .car-necessary-img{
+	width: 100%;
+}
+.car-necessary  .car-necessary-img img{
+	width: 100%;
+	}
+/*净化棒详情*/
+.purge{
+	padding-top: 5px;
+	width:100%;
+	height: 400px;
+	background:url(../img/j_09.gif) no-repeat center center;
+	background-size: 100%;
+}
+.purge .purge-box{
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+}
+.purge .purge-box .purge-box-l{
+	float: left;
+	width:65%;
+}
+.purge .purge-box .purge-box-l table{
+	width: 100%;
+}
+.purge .purge-box .purge-box-l table td{
+	background-color:rgb(234,234,234);
+}
+.purge .purge-box .purge-box-l table td:first-child{
+	width:30%;
+	text-align: center;
+	background-color: rgb(153,201,78);
+}
+
+.purge .purge-box .purge-box-r .box-r-fix{
+	padding-top:300px;
+}
+.purge .purge-box .purge-box-r .box-r-fix table td:first-child{
+	width: 40% !important;
+}
+/*与可乐比较*/
+.colo{
+	width: 100%;
+	padding-top: 10px;
+}
+.colo-l{
+	position: relative;
+	border-top: 1px dashed #000;
+	border-bottom: 1px dashed #000;
+}
+.colo img{
+	width: 100%;
+}
+.colo-l img{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100px;
+	text-align: center;
+}
+.colo .colo-p{
+	width: 100%;
+	height: 25px;
+    line-height:25px;
+	background-color: rgb(155,209,71);
+	color: #fff;
+}
+
+/*使用方法*/
+.usage{
+	width: 100%;
+}
+.usage img{
+	width: 100%;
+}
+
+.usage p{
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+/*细菌六大类*/
+.germ{
+	width: 90%;
+	margin: 0 auto;
+}
+.germ img{
+	width: 100%;
+}
+/*好评*/
+.good{
+	width: 100%;
+}
+.good img{
+	width: 100%;
+}
+/*检测报告*/
+.testing{
+	width: 100%;
+}
+.testing img{
+	width: 100%;
+}
+.testing  .testing-t{
+	width: 80%;
+	height: 50px;
+	margin: 0 auto;
+	padding: 5px;
+	padding-bottom: 0;
+	border: 2px solid rgb(127,192,229);
+}
+.testing  .testing-t .testing-t-b{
+	font-size: 20px;
+	color:rgb(127,192,229) ;
+}
+.testing  .testing-t .testing-t-s{
+	font-size:12px;
+}
+/*订单信息*/
+.order{
+	width: 100%;
+}
+.order .order-t{
+	padding: 5px 0 5px  10px;
+	font-size: 16px;
+	font-weight: bold;
+	color:#fff;
+	background-color:rgb(0,129,209) ;
+}
+.order .order-t .order-t-s{
+	font-size: 12px;
+}
+.order .order-form{
+	width: 95%;
+	padding-left: 5%;
+}
+.order .order-form .oder-product{
+	width: 100%;
+	background:url(../img/h_22.gif) no-repeat center center;
+	background-size:100% 100%;
+}
+.order .order-form .oder-product font{
+	padding-left: 5%;
+	font-size: 10px !important;
+	color: red;
+}
+.order .order-form .oder-product .oder-product-p{
+	font-size:14px;
+	font-weight: bold;
+}
+.order .order-form .order-info{
+	
+}
+.order .order-form .order-info p{
+	padding-top: 10px;
+}
+.order .order-form .order-info .order-message{
+	width: 100%;
+}
+.order .order-form .order-info .order-message table{
+	width: 100%;
+}
+.order .order-form .order-info .order-message tbody{
+	width: 100%;
+}
+.order .order-form .order-info .order-message tbody textarea{
+	width: 80%;
+	height: 60px;
+}
+.order-phone{
+	color: red;
+}
+.order-submit{
+	margin-left: 30%;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #fff;
+	box-shadow: 0 0 2px #fff inset;
+	background: rgb(52,156,221);
+}
+/*购买成功页面*/
+#fahuo {
+    background: #fff;
+    padding: 15px 0px;
+}
+#fahuo .con {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 200%;
+    background: #EFEFEF;
+    text-align: left;
+    border: 2px solid #a0a0a0;
+}
+#fahuo ul {
+    padding: 10px;
+    height: 105px;
+    overflow: hidden;
+}
+
+/*foot*/
+.foot{
+	width: 100%;
+	padding: 10px 0;
+	color: #fff;
+	
+	background-color: rgb(122,120,120);
+}
+.foot img{
+	width: 70%;
+	padding-left: 15%;
+}
+.foot p{
+	font-size: 10px !important;
+}
+/*扫描微信*/
+.weixin{
+	position:fixed;
+	top:200px;
+	right: 0;
+}
+.weixin img{
+	width:100px;
+	height: 100px;
+}
+.bg-font-a{
+	color:rgb(243,152,0);
+	background-color: #000;
+}
+.bg-div-s{
+	width: 90%;
+	padding-left: 5%;
+	margin-bottom: 10px;
+}
+.bg-div-s .bg-div-s-box{
+	padding: 5px;
+	color: #fff;
+	background-color: rgb(161,21,3);
+	font-size: 16px;
+	text-indent: 2em;
+}
+/*倒计时*/
+.time-item span{
+	background: url(../img/icon_time.png) left center no-repeat;
+	background-size: 14px 14px;
+	padding-left: 20px;
+}
+.time-item{
+	color: #fff;
+}
